@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Trang quản lý của Admin - TuLearn</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="images/icon-tab.png">
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html"><i class="fas fa-user-graduate"></i> TuLearn</a></h1>
+            <nav class="links">
+                <ul>
+                    <li><a href="#"><i class="fas fa-bullhorn"></i> Truyền thông</a></li>
+                    <li><a href="#"><i class="fas fa-headset"></i> Hỗ trợ</a></li>
+                    <li><a href="#"><i class="fas fa-database"></i> Lưu trữ</a></li>
+                    <li><a href="#"><i class="fas fa-handshake"></i> Đối tác</a></li>
+                    <li><a href="#"><i class="fas fa-briefcase"></i> Tuyển dụng</a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i> Thông báo</a></li>
+                </ul>
+            </nav>
+            <nav class="main">
+                <ul>
+                    <li class="search">
+                        <a class="fa-search" href="#search">Search</a>
+                        <form id="search" method="get" action="#">
+                            <input type="text" name="query" placeholder="Search" />
+                        </form>
+                    </li>
+                    <li class="menu">
+                        <a class="fa-bars" href="#menu">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <section id="menu">
+
+            <!-- Search -->
+            <section>
+                <form class="search" method="get" action="#">
+                    <input type="text" name="query" placeholder="Search" />
+                </form>
+            </section>
+
+            <!-- Links -->
+            <section>
+                <ul class="links">
+                    <li>
+                        <a href="#">
+                            <h3><i class="fas fa-bullhorn"></i> Truyền thông</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3><i class="fas fa-headset"></i> Hỗ trợ</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3><i class="fas fa-database"></i> Lưu trữ</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3><i class="fas fa-handshake"></i> Đối tác</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3><i class="fas fa-briefcase"></i> Tuyển dụng</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3><i class="fas fa-bell"></i> Thông báo</h3>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Actions -->
+            <section>
+                <h1><a href="index.html"><i class="fas fa-user-graduate"></i> TuLearn</a></h1>
+            </section>
+
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Tabbar -->
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">Q.Lý Gia sư</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Q.Lý Học viên</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Q.Lý Yêu cầu</button>
+                <button class="tablinks" onclick="openCity(event, 'Seoul')">Q.Lý Kết nối</button>
+                <button class="tablinks" onclick="openCity(event, 'Hanoi')">Q.Lý Môn học</button>
+            </div>
+            <!-- VietPX - Insert Code Below -->
+            <div id="London" class="tabcontent">
+                <h3>Table</h3>
+                <h4>Default</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Item One</td>
+                                <td>Ante turpis integer aliquet porttitor.</td>
+                                <td>29.99</td>
+                            </tr>
+                            <tr>
+                                <td>Item Two</td>
+                                <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                <td>19.99</td>
+                            </tr>
+                            <tr>
+                                <td>Item Three</td>
+                                <td> Morbi faucibus arcu accumsan lorem.</td>
+                                <td>29.99</td>
+                            </tr>
+                            <tr>
+                                <td>Item Four</td>
+                                <td>Vitae integer tempus condimentum.</td>
+                                <td>19.99</td>
+                            </tr>
+                            <tr>
+                                <td>Item Five</td>
+                                <td>Ante turpis integer aliquet porttitor.</td>
+                                <td>29.99</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td>100.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h4>Alternate</h4>
+                <div class="table-wrapper">
+                    <table class="alt">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Item One</td>
+                                <td>Ante turpis integer aliquet porttitor.</td>
+                                <td>29.99</td>
+                            </tr>
+                            <tr>
+                                <td>Item Two</td>
+                                <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                <td>19.99</td>
+                            </tr>
+                            <tr>
+                                <td>Item Three</td>
+                                <td> Morbi faucibus arcu accumsan lorem.</td>
+                                <td>29.99</td>
+                            </tr>
+                            <tr>
+                                <td>Item Four</td>
+                                <td>Vitae integer tempus condimentum.</td>
+                                <td>19.99</td>
+                            </tr>
+                            <tr>
+                                <td>Item Five</td>
+                                <td>Ante turpis integer aliquet porttitor.</td>
+                                <td>29.99</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td>100.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                </section>
+
+
+                </article>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <section>
+                    <h3>Buttons</h3>
+                    <ul class="actions">
+                        <li><a href="#" class="button large">Large</a></li>
+                        <li><a href="#" class="button">Default</a></li>
+                        <li><a href="#" class="button small">Small</a></li>
+                    </ul>
+                    <ul class="actions fit">
+                        <li><a href="#" class="button fit">Fit</a></li>
+                        <li><a href="#" class="button fit">Fit</a></li>
+                        <li><a href="#" class="button fit">Fit</a></li>
+                    </ul>
+                    <ul class="actions fit small">
+                        <li><a href="#" class="button fit small">Fit + Small</a></li>
+                        <li><a href="#" class="button fit small">Fit + Small</a></li>
+                        <li><a href="#" class="button fit small">Fit + Small</a></li>
+                    </ul>
+                    <ul class="actions">
+                        <li><a href="#" class="button icon solid fa-download">Icon</a></li>
+                        <li><a href="#" class="button icon solid fa-upload">Icon</a></li>
+                        <li><a href="#" class="button icon solid fa-save">Icon</a></li>
+                    </ul>
+                    <ul class="actions">
+                        <li><span class="button disabled">Disabled</span></li>
+                        <li><span class="button disabled icon solid fa-download">Disabled</span></li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="Seoul" class="tabcontent">
+                <!-- Post -->
+                <section>
+                    <h3>Form</h3>
+                    <form method="post" action="#">
+                        <div class="row gtr-uniform">
+                            <div class="col-6 col-12-xsmall">
+                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+                            </div>
+                            <div class="col-12">
+                                <select name="demo-category" id="demo-category">
+													<option value="">- Category -</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+                            </div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="demo-priority-low" name="demo-priority" checked>
+                                <label for="demo-priority-low">Low</label>
+                            </div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="demo-priority-normal" name="demo-priority">
+                                <label for="demo-priority-normal">Normal</label>
+                            </div>
+                            <div class="col-4 col-12-small">
+                                <input type="radio" id="demo-priority-high" name="demo-priority">
+                                <label for="demo-priority-high">High</label>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <input type="checkbox" id="demo-copy" name="demo-copy">
+                                <label for="demo-copy">Email me a copy</label>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <input type="checkbox" id="demo-human" name="demo-human" checked>
+                                <label for="demo-human">Not a robot</label>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send Message" /></li>
+                                    <li><input type="reset" value="Reset" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <div id="Hanoi" class="tabcontent">
+                <section>
+                    <h3>Image</h3>
+                    <h4>Fit</h4>
+                    <div class="box alt">
+                        <div class="row gtr-uniform">
+                            <div class="col-12"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+                        </div>
+                    </div>
+                    <h4>Left &amp; Right</h4>
+                    <p><span class="image left"><img src="images/pic07.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing
+                        eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing
+                        eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus
+                        euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+                    <p><span class="image right"><img src="images/pic04.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing
+                        eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing
+                        eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus
+                        euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+                </section>
+            </div>
+
+            <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+
+        </div>
+        <!-- VietPX - End Insert Code -->
+        
+        <!-- Sidebar -->
+        <section id="sidebar">
+
+            <!-- Intro -->
+            <section id="intro">
+                <a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
+                <header>
+                    <h2>Tên Admin</h2>
+                    <p><i class="fas fa-user-check"></i> Trạng thái admin</a>
+                    </p>
+                </header>
+            </section>
+            <section id="menu-bar">
+                <ul class="alt">
+                    <li>
+                        <i class="far fa-address-card"></i>
+                        <a href="">Xem hồ sơ của bạn</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-unlock-alt"></i>
+                        <a href="">Thay đổi mật khẩu</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-edit"></i>
+                        <a href="">Cập nhật hồ sơ</a>
+                    </li>
+                    <li>
+                        <i class="far fa-bell"></i>
+                        <a href="">Quản lý thông báo</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-sign-out-alt"></i>
+                        <a href="">Đăng xuất</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- About -->
+            <section class="blurb">
+                <h2>About</h2>
+                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
+                <ul class="actions">
+                    <li><a href="#" class="button">Learn More</a></li>
+                </ul>
+            </section>
+
+            <!-- Footer -->
+            <section id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <p class="copyright">&copy; TutorLearn Design Team</p>
+            </section>
+
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
