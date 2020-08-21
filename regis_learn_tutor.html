@@ -2,12 +2,14 @@
 <html>
 
 <head>
-    <title>Trang quản lý yêu cầu của HV - TuLearn</title>
+    <title>Đăng kí học với Gia Sư của HV - TuLearn</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" href="images/icon-tab.png">
     <link rel="stylesheet" href="assets/css/req-manger.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/validation.js"></script>
 </head>
 
 <body class="is-preload">
@@ -95,250 +97,136 @@
         <div id="main">
 
             <!-- Tabbar -->
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')">Yêu cầu tìm GS</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Gửi lời mời dạy</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">GS gửi yêu cầu</button>
+            <div class="noti">
+                <i class="fas fa-exclamation-circle noti_icon"></i>
+                <p>Vui lòng điền đầy đủ thông tin bên dưới để tiếp tục</p>
             </div>
 
-            <div id="London" class="tabcontent">
-                <!-- Post -->
 
-            </div>
-
-            <div id="Paris" class="tabcontent">
-                <!-- Post -->
-                <article class="post">
-                    <header class="header_post">
-                        <div class="title">
-
-                            <h3>bạn đã đăng kí học <span>Toán</span> với gia sư <span>Nguyễn Tố Tâm</span></h3>
-                        </div>
-                        <div class="meta meta_ci">
-                            <div class="circle"></div>
-                            <p>Đang chờ xác nhận từ gia sư</p>
-                        </div>
-                    </header>
-
-                    <div class="body_tokyo">
-                        <div class="body_first">
-                            <div class="body_text">
-                                <span>Dạy Lớp:</span>
-                                <p>Lớp 10, 11, 12</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Môn:</span>
-                                <p>Toán</p>
-
-                            </div>
-
-                        </div>
-                        <div class="body_second">
-
-                            <div class="body_text">
-                                <span>Số buổi/Tuần:</span>
-                                <p>3 buổi</p>
-                            </div>
-                            <div class="body_text">
-                                <span>Thời gian/Buổi:</span>
-                                <p>2 giờ</p>
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-
-                    <footer>
-
-                        <a href="#" class="button btn">Hủy yêu cầu</a>
-
-
-                    </footer>
-                </article>
-                <article class="post">
-                    <header class="header_post">
-                        <div class="title">
-
-                            <h3>bạn đã đăng kí học <span>Toán</span> với gia sư <span>Nguyễn Tố Tâm</span></h3>
-                        </div>
-                        <div class="meta meta_ci">
-                            <div class="circle"></div>
-                            <p>Đang chờ xác nhận từ gia sư</p>
-                        </div>
-                    </header>
-
-                    <div class="body_tokyo">
-                        <div class="body_first">
-                            <div class="body_text">
-                                <span>Dạy Lớp:</span>
-                                <p>Lớp 10, 11, 12</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Môn:</span>
-                                <p>Toán</p>
-
-                            </div>
-
-                        </div>
-                        <div class="body_second">
-
-                            <div class="body_text">
-                                <span>Số buổi/Tuần:</span>
-                                <p>3 buổi</p>
-                            </div>
-                            <div class="body_text">
-                                <span>Thời gian/Buổi:</span>
-                                <p>2 giờ</p>
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-
-                    <footer>
-
-                        <a href="#" class="button btn">Hủy yêu cầu</a>
-
-
-                    </footer>
-                </article>
-
-
-            </div>
-
-            <div id="Tokyo" class="tabcontent">
-                <article class="post">
-                    <header class="header_post">
-                        <div class="title">
-
-                            <h3>Gia Sư <span>Võ Văn Hoàng</span> đăng kí dạy bạn</h3>
-                        </div>
-
-                    </header>
+            <!-- Post -->
+            <article class="post">
+                <div class="post_header">
                     <div class="body_img">
                         <img src="images/pic08.jpg" class="image img_body" alt="">
-                        <h2>Võ Văn Hoàng</h2>
                     </div>
-                    <div class="body_tokyo">
-
-
-                        <div class="body_first">
-                            <div class="body_text">
-                                <span>Dạy môn:</span>
-                                <p>Toán</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Trình độ:</span>
-                                <p>Đại học</p>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Học Phí:</span>
-                                <p>100.000 đ/Buổi</p>
-                            </div>
-                        </div>
-                        <div class="body_second">
-                            <div class="body_text">
-
-                                <span>Dạy Lớp:</span>
-                                <p>Lớp 10, 11, 12</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Địa chỉ:</span>
-                                <p>Đà Nắng</p>
-                            </div>
-                        </div>
-
+                    <div class="post_header_text">
+                        <p class="name_tutor">Ngô Văn Đạt</p>
+                        <p>Giáo viên trường Sư Phạm TPHCM</p>
+                        <p>Học Phí: <span>100.000 đồng/Buổi</span></p>
                     </div>
+                </div>
+                <section>
 
-                    <footer class="footer_jc">
+                    <form method="post" action="#">
+                        <div class="row gtr-uniform">
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Lớp học</label>
+                                <select name="class_category" id="class_category">
+                                    <option value="">- Lớp Học -</option>
+                                    <option value="1">Lớp 10</option>
+                                    <option value="1">Lớp 11</option>
+                                  
+                                </select>
+                                <p id="state" class="error"></p>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Môn học</label>
+                                <select name="subject_category" id="subject_category">
+                                    <option value="">- Môn Học -</option>
+                                    <option value="1">Toán</option>
+                                    <option value="1">Lí</option>
+                                  
+                                </select>
+                                <p id="state1" class="error"></p>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Số buổi/Tuần</label>
+                                <select name="num_category" id="num_category">
+                                    <option value="">- Chọn số buổi dạy -</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                  
+                                </select>
+                                <p id="state2" class="error"></p>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Số giờ học/Buổi</label>
+                                <select name="num_category" id="hour_category">
+                                    <option value="">- Số giờ học -</option>
+                                    <option value="1">1</option>
+                                    <option value="2">1.5</option>
+                                    <option value="3">2</option>
+                                    <option value="4">2.5</option>
+                                    <option value="5">3</option>
+                                   
+                                  
+                                </select>
+                                <p id="state3" class="error"></p>
+                            </div>
+                            <div class="col-12">
+                                <label for="">Lịch học</label>
+                                <span>(chọn thời gian rảnh bạn có thể học)</span>
+                            </div>
 
-                        <a href="#" class="button btnjc">Từ chối </a>
-                        <a href="#" class="button btnjc">Chấp nhận</a>
 
 
-                    </footer>
-                </article>
-                <article class="post">
-                    <header class="header_post">
-                        <div class="title">
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Thứ Hai:</label>
+                                <input type="checkbox" id="ThuHai" name="ThuHai">
+                                <label for="ThuHai">15:00-17:00</label>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Thứ Ba:</label>
+                                <input type="checkbox" id="ThuBa" name="ThuBa">
+                                <label for="ThuBa">15:00-17:00</label>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Thứ Tư:</label>
+                                <input type="checkbox" id="ThuTu" name="ThuTu">
+                                <label for="ThuTu">15:00-17:00</label>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Thứ Năm:</label>
+                                <input type="checkbox" id="ThuNam" name="ThuNam">
+                                <label for="ThuNam">15:00-17:00</label>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Thứ Sáu:</label>
+                                <input type="checkbox" id="ThuSau" name="ThuSau">
+                                <label for="ThuSau">15:00-17:00</label>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Thứ Bảy:</label>
+                                <input type="checkbox" id="ThuBay" name="ThuBay">
+                                <label for="ThuBay">15:00-17:00</label>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Chủ Nhật:</label>
+                                <input type="checkbox" id="ChuNhat" name="ChuNhat">
+                                <label for="ChuNhat">15:00-17:00</label>
+                            </div>
 
-                            <h3>Gia Sư <span>Võ Văn Hoàng</span> đăng kí dạy bạn</h3>
+
                         </div>
-
-                    </header>
-                    <div class="body_img">
-                        <img src="images/pic08.jpg" class="image img_body" alt="">
-                        <h2>Võ Văn Hoàng</h2>
-                    </div>
-                    <div class="body_tokyo">
-
-
-                        <div class="body_first">
-                            <div class="body_text">
-                                <span>Dạy môn:</span>
-                                <p>Toán</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Trình độ:</span>
-                                <p>Đại học</p>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Học Phí:</span>
-                                <p>100.000 đ/Buổi</p>
-                            </div>
+                        <div class="btn_xh">
+                            <a href="#" id="btnTiepTuc" class="button large btn">Tiếp Tục</a>
                         </div>
-                        <div class="body_second">
-                            <div class="body_text">
-
-                                <span>Dạy Lớp:</span>
-                                <p>Lớp 10, 11, 12</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Địa chỉ:</span>
-                                <p>Đà Nắng</p>
-                            </div>
-                        </div>
-
-                    </div>
+                    </form>
+                </section>
 
 
-                    <footer class="footer_jc">
-
-                        <a href="#" class="button btnjc">Từ chối </a>
-                        <a href="#" class="button btnjc">Chấp nhận</a>
+            </article>
 
 
-                    </footer>
-                </article>
-            </div>
 
-            <script>
-                function openCity(evt, cityName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(cityName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
-            </script>
+
+
+
 
 
 
@@ -380,6 +268,7 @@
                     </li>
                 </ul>
                 <h2>Gia sư gần bạn <i class="fas fa-hand-point-down"></i></h2>
+
             </section>
 
             <!-- Posts List -->
