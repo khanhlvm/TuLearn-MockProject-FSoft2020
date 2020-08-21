@@ -3481,3 +3481,40 @@ body {
     background-color: white;
     padding: 2em 1em;
 }
+
+.dn:hover {
+    color: white;
+    background-color: #00BFFF;
+    opacity: 1;
+    box-shadow: 5px 5px 2px 2px #000;
+}
+
+.qmk {
+    color: white;
+}
+
+.qmk:hover {
+    color: salmon;
+}
+
+.dn {
+    opacity: 0.7;
+    background-color: #00BFFF;
+    text-align: center;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    align-content: center;
+}
+
+#demo-name {
+    height: 40px;
+}
+
+#demo-email {
+    height: 40px;
+}
+
+#login-area {
+    opacity: 1;
+}

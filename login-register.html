@@ -137,7 +137,7 @@
         <section id="sidebar">
             <!-- Tabbar -->
             <div class="tab">
-                <button class="tablinks" ><i class="fas fa-user-graduate"></i></button>
+                <button class="tablinks"><i class="fas fa-user-graduate"></i></button>
                 <button class="tablinks" onclick="openCity(event, 'Login')">Đăng nhập</button>
                 <button class="tablinks" onclick="openCity(event, 'Register')">Đăng ký</button>
             </div>
@@ -146,52 +146,71 @@
                 <section id="login-area">
                     <form method="post" action="#">
                         <div class="row gtr-uniform">
-                            <div class="col-6 col-12-xsmall">
-                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-                            </div>
-                            <div class="col-6 col-12-xsmall">
-                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+                            <div class="col-12">
+                                <strong>Email hoặc số điện thoại</strong>
+                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Nhập e-mail hoặc số điện thoại" />
                             </div>
                             <div class="col-12">
-                                <select name="demo-category" id="demo-category">
-                                    <option value="">- Category -</option>
-                                    <option value="1">Manufacturing</option>
-                                    <option value="1">Shipping</option>
-                                    <option value="1">Administration</option>
-                                    <option value="1">Human Resources</option>
-                                </select>
+                                <strong>Mật khẩu</strong>
+                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Nhập mật khẩu" />
                             </div>
-                            <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-low" name="demo-priority" checked>
-                                <label for="demo-priority-low">Low</label>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-normal" name="demo-priority">
-                                <label for="demo-priority-normal">Normal</label>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-high" name="demo-priority">
-                                <label for="demo-priority-high">High</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="demo-copy" name="demo-copy">
-                                <label for="demo-copy">Email me a copy</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="demo-human" name="demo-human" checked>
-                                <label for="demo-human">Not a robot</label>
+                            <br>
+                            <div class="col-12">
+                                <div class="dn">
+                                    <p id="dnp"><i class="fas fa-sign-in-alt"></i> Đăng nhập </p>
+                                </div>
                             </div>
                             <div class="col-12">
-                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+                                <div style="text-align: right;">
+                                    <p class="qmk"> Quên mật khẩu ?</p>
+                                </div>
                             </div>
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" value="Đăng ký" /></li>
-                                    <li><input type="reset" value="Đăng nhập" /></li>
-                                </ul>
-                            </div>
-                        </div>
                     </form>
+
+                </section>
+                </div>
+
+                <div id="Register" class="tabcontent">
+                    <section id="login-area">
+                        <form method="post" action="#">
+                            <strong>Bạn là ai?</strong>
+                            <div class="row">
+                                <div class="col-6 col-12-small">
+                                    <input type="radio" id="demo-priority-low" name="demo-priority" checked>
+                                    <label for="demo-priority-low">Học viên</label>
+                                </div>
+                                <div class="col-6 col-12-small">
+                                    <input type="radio" id="demo-priority-normal" name="demo-priority">
+                                    <label for="demo-priority-normal">Gia sư</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12">
+                                <strong>Địa chỉ e-mail</strong>
+                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Nhập e-mail" />
+                            </div>
+                            <div class="col-12">
+                                <strong><br>Số điện thoại</strong>
+                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Nhập số điện thoại" />
+                            </div>
+                            <div class="col-12">
+                                <strong><br>Mật khẩu</strong>
+                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Nhập mật khẩu mới" />
+                            </div>
+                            <div class="col-12">
+                                <strong><br>Nhập lại mật khẩu</strong>
+                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Nhập lại mật khẩu" />
+                            </div>
+
+                            <br>
+                            <div class="col-12">
+                                <div class="dn">
+                                    <p id="dnp"><i class="fas fa-sign-in-alt"></i> Đăng kí </p>
+                                </div>
+                            </div>
+                </div>
+                </form>
                 </section>
             </div>
 
@@ -246,7 +265,7 @@
                         </div>
                     </form>
                 </section>
-            </div>            
+            </div>
             <!-- NhanNTT13 - End Insert Code -->
 
             <script>
