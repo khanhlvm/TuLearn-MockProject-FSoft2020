@@ -6,8 +6,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/thu_css.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/input-radio.css">
     <link rel="icon" href="images/icon-tab.png">
-    <link rel="stylesheet" href="assets/css/req-manger.css">
 </head>
 
 <body class="is-preload">
@@ -23,7 +25,8 @@
                     <li><a href="#"><i class="fas fa-users"></i> Quản lý lớp học</a></li>
                     <li><a href="#"><i class="fas fa-tasks"></i> Quản lý yêu cầu</a></li>
                     <li><a href="#"><i class="fas fa-search"></i> Tìm gia sư</a></li>
-                    <li><a href="#"><i class="far fa-calendar-plus"></i> Tạo yêu cầu</a></li>
+                    <li><a href="#" onclick="openCity(event, 'DangBai')"><i class="far fa-calendar-plus"></i> Tạo yêu
+                            cầu</a></li>
                     <li><a href="#"><i class="fas fa-bell"></i> Thông báo</a></li>
                 </ul>
             </nav>
@@ -100,228 +103,653 @@
                 <button class="tablinks" onclick="openCity(event, 'Paris')">Gửi lời mời dạy</button>
                 <button class="tablinks" onclick="openCity(event, 'Tokyo')">GS gửi yêu cầu</button>
             </div>
+            <div id="DangBai" class="tabcontent">
+                <!-- Post -->
+                <section>
+                    <h2>Đăng Bài Tìm Gia Sư</h2>
+                    
+                    <form method="post" action="#">
+                        <div class="row gtr-uniform">
+                            
+                            <div class="col-6 col-12-xsmall">
+                                <label for="MonHoc">Môn Học</label>
+                                <select name="MonHoc" id="MonHoc">
+                                    <option value="">- Môn Học -</option>
+                                    <option value="1">Hóa</option>
+                                    <option value="1">Toán</option>
+                                    <option value="1">Ngữ Văn</option>
+                                </select>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="GioiTinhGiaSu">Giới Tính Gia Sư</label>
+                                <select name="GioiTinhGiaSu" id="demo-category">
+                                    <option value="">- Giới Tính Gia Sư -</option>
+                                    <option value="1">Nam</option>
+                                    <option value="1">Nữ</option>
+                                    <option value="1">Cả Hai</option>
+                                </select>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="TrinhDoGiaSu">Trình Độ Gia Sư</label>
+                                <select name="TrinhDoGiaSu" id="demo-category">
+                                    <option value="">- Trình Độ Gia Sư -</option>
+                                    <option value="1">Sinh Viên</option>
+                                    <option value="1">Giáo Viên</option>
+                                    <option value="1">Toàn Bộ</option>
+                                </select>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Học Phí Đề Xuất</label>
+                                <input type="text" name="demo-email" id="demo-email" value=""
+                                    placeholder="0 vnđ/buổi" />
+                            </div>
+
+                            <div class="col-6 col-12-xsmall">
+                                <label for="SoGioMotBuoi">Số Giờ/Buổi</label>
+                                <select name="SoGioMotBuoi" id="demo-category">
+                                    <option value="">1</option>
+                                    <option value="1">1.5</option>
+                                    <option value="1">2</option>
+                                    <option value="1">2.5</option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-12-xsmall">
+                                <label for="SoBuoiMotTuan">Số Buổi/Tuần</label>
+                                <select name="SoBuoiMotTuan" id="demo-category">
+                                    <option value="">1</option>
+                                    <option value="1">2</option>
+                                    <option value="1">3</option>
+                                    <option value="1">4</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="">Ngày Dự Kiến Bắt Đầu Học</label>
+                                <input type="date" name="Date" id="datepicker"/>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="">Yêu cầu, mong muốn khác của học viên</label>
+                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+                                    rows="6"></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="">Ngày Rảnh Trong Tuần</label>
+                            </div>
+                            <div class="col-12">
+                                <div class="row canh ngay" id="ngay1">
+                                    <select class="col-6" name="NgayRanh1" id="NgayRanh1">
+                                        <option value="">T2</option>
+                                        <option value="1">T3</option>
+                                        <option value="1">3</option>
+                                        <option value="1">4</option>
+                                    </select>
+                                    <div class="row canh col-12 gioranh1" id="idGioRanh1-0">
+                                        <div class="row canh col-3 col-6-xsmall gio"> 
+                                            <select name="GioBatDau" id="demo-category">
+                                                <option value="">Giờ Bắt Đầu</option>
+                                                <option value="1">1.5</option>
+                                                <option value="1">2</option>
+                                                <option value="1">2.5</option>
+                                            </select>
+                                        </div>
+                                        <label class="phancachgio" for="">-</label>
+                                        <div class="row canh col-3 col-6-xsmall gio">
+                                            <select name="GioBatDau" id="demo-category">
+                                                <option value="">Giờ Kết Thúc</option>
+                                                <option value="1">1.5</option>
+                                                <option value="1">2</option>
+                                                <option value="1">2.5</option>
+                                            </select>
+                                        </div>
+                                        <a class="gio XoaGio" onclick="XoaGio(this)"><i class="fas fa-times-circle" ></i></a>
+                                    </div>
+                                    <div class="col-12" id="add_more1"> </div>
+                                    
+
+                                    <input class="themgio" type="button" value="Thêm Giờ" onclick="ThemGio(this)">
+
+                                </div>
+                                <div class="col-12" id="add_more_ngay"></div>
+                                <input class="themngay" id="themngay" type="button" value="Thêm Ngày" onclick="">
+                                <input class="xoangay" id="xoangay" type="button" value="Xóa Ngày" onclick="">
+
+                            </div>
+                            <div class="col-12">
+                                <ul class="actions">
+                                    <li><input type="submit" value="Đăng Bài" /></li>
+                                    <li><input type="reset" value="Reset" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+
+            </div>
 
             <div id="London" class="tabcontent">
                 <!-- Post -->
+                <article class="post">
+                    <header>
+                        <div class="title">
+                            <h2><a href="single.html">ID-xxxxxxxx</a></h2>
+                            <p class="status">Status: ---</p>
+                            <a class="quanly" onclick="">Chỉnh Sửa</i></a>
+                            <a class="quanly" onclick="">Xóa</a>
+                        </div>
+                        <div class="meta">
+                            <time class="published" datetime="2015-10-18">October 18, 2015</time>
+                            <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg"
+                                    alt="" /></a>
+                        </div>
+                    </header>
+                    <div class="row bai">
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Môn Học: </label>
+                            <label class="infor" for="">Toán</label>
+                        </div>
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Giới Tính Gia Sư: </label>
+                            <label class="infor" for="">Cả Hai</label>
+                        </div>
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Trình Độ Gia Sư: </label>
+                            <label class="infor" for="">Sinh Viên</label>
+                        </div>
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Học Phí Đề Xuất/Buổi: </label>
+                            <label class="infor" for="">200.000 vnđ</label>
+                        </div>
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Số Giờ Học/Buổi: </label>
+                            <label class="infor" for="">1.5</label>
+                        </div>
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Số Buổi Học/Ngày: </label>
+                            <label class="infor" for="">3</label>
+                        </div>
+                        <div class="row col-12 more1">
+                            <label class="infor" for="">Ngày Dự Kiến Bắt Đầu Học: </label>
+                            <label class="infor" for="">22/09/2020</label>
+                        </div>
+                        <div class="row col-12 more1">
+                            <label class="infor" for="">Mong Muốn, Yêu Cầu Khác Của Học Viên: </label>
+                            <label class="infor" for="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+                                quisquam quis, doloribus voluptatum libero consequuntur facilis quaerat laborum
+                                excepturi debitis, molestias, totam quia culpa laudantium dolorum suscipit maiores eum
+                                quasi!</label>
+                        </div>
+                        <div class="row col-6 more1">
+                            <label class="infor" for="">Thời Gian Rảnh Trong Tuần: </label>
+                            <label class="infor" for="">Thứ 2: 15:00-17:00</label>
+                        </div>
 
+                    </div>
+
+
+                    <footer>
+                        <ul class="actions">
+                            <li><a class="button large" onclick="HienThi(1)">Hiện Thêm/Ẩn</a></li>
+                        </ul>
+                        <ul class="stats">
+                            <li><a href="#">General</a></li>
+                            <li><a href="#" class="icon solid fa-heart">28</a></li>
+                            <li><a href="#" class="icon solid fa-comment">128</a></li>
+                        </ul>
+                    </footer>
+                </article>
+                <article class="post">
+                    <header>
+                        <div class="title">
+                            <h2><a href="single.html">ID-xxxxxxxx</a></h2>
+                            <p class="status">Status: ---</p>
+                            <a class="quanly" onclick="">Chỉnh Sửa</i></a>
+                            <a class="quanly" onclick="">Xóa</a>
+                        </div>
+                        <div class="meta">
+                            <time class="published" datetime="2015-10-18">October 18, 2015</time>
+                            <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg"
+                                    alt="" /></a>
+                        </div>
+                    </header>
+                    <div class="row bai">
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Môn Học: </label>
+                            <label class="infor" for="">Toán</label>
+                        </div>
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Giới Tính Gia Sư: </label>
+                            <label class="infor" for="">Cả Hai</label>
+                        </div>
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Trình Độ Gia Sư: </label>
+                            <label class="infor" for="">Sinh Viên</label>
+                        </div>
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Học Phí Đề Xuất/Buổi: </label>
+                            <label class="infor" for="">200.000 vnđ</label>
+                        </div>
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Số Giờ Học/Buổi: </label>
+                            <label class="infor" for="">1.5</label>
+                        </div>
+                        <div class="row col-6 col-12-xsmall">
+                            <label class="infor" for="">Số Buổi Học/Ngày: </label>
+                            <label class="infor" for="">3</label>
+                        </div>
+                        <div class="row col-12 more2">
+                            <label class="infor" for="">Ngày Dự Kiến Bắt Đầu Học: </label>
+                            <label class="infor" for="">22/09/2020</label>
+                        </div>
+                        <div class="row col-12 more2">
+                            <label class="infor" for="">Mong Muốn, Yêu Cầu Khác Của Học Viên: </label>
+                            <label class="infor" for="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+                                quisquam quis, doloribus voluptatum libero consequuntur facilis quaerat laborum
+                                excepturi debitis, molestias, totam quia culpa laudantium dolorum suscipit maiores eum
+                                quasi!</label>
+                        </div>
+                        <div class="row col-6 col-12-xsmall more2">
+                            <label class="infor" for="">Thời Gian Rảnh Trong Tuần: </label>
+                            <label class="infor" for="">Thứ 2: 15:00-17:00</label>
+                        </div>
+
+                    </div>
+
+
+                    <footer>
+                        <ul class="actions">
+                            <li><a class="button large" onclick="HienThi(2)">Hiện Thêm/Ẩn</a></li>
+                        </ul>
+                        <ul class="stats">
+                            <li><a href="#">General</a></li>
+                            <li><a href="#" class="icon solid fa-heart">28</a></li>
+                            <li><a href="#" class="icon solid fa-comment">128</a></li>
+                        </ul>
+                    </footer>
+                </article>
             </div>
 
             <div id="Paris" class="tabcontent">
                 <!-- Post -->
-                <article class="post">
-                    <header class="header_post">
-                        <div class="title">
 
-                            <h3>bạn đã đăng kí học <span>Toán</span> với gia sư <span>Nguyễn Tố Tâm</span></h3>
+                <article class="post">
+                    <header>
+                        <div class="title">
+                            <h2><a href="#">Elements</a></h2>
+                            <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
                         </div>
-                        <div class="meta meta_ci">
-                            <div class="circle"></div>
-                            <p>Đang chờ xác nhận từ gia sư</p>
+                        <div class="meta">
+                            <time class="published" datetime="2015-10-18">October 18, 2015</time>
+                            <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg"
+                                    alt="" /></a>
                         </div>
                     </header>
 
-                    <div class="body_tokyo">
-                        <div class="body_first">
-                            <div class="body_text">
-                                <span>Dạy Lớp:</span>
-                                <p>Lớp 10, 11, 12</p><br>
+                    <section>
+                        <h3>Text</h3>
+                        <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is
+                            <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub>
+                            text. This is <u>underlined</u> and this is code:
+                            <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+                        <hr />
+                        <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi
+                            integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia
+                            sapien lorem accumsan varius montes viverra nibh
+                            in adipiscing blandit tempus accumsan.</p>
+                        <hr />
+                        <h2>Heading Level 2</h2>
+                        <h3>Heading Level 3</h3>
+                        <h4>Heading Level 4</h4>
+                        <hr />
+                        <h4>Blockquote</h4>
+                        <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget
+                            tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu
+                            felis iaculis volutpat ac adipiscing accumsan faucibus.
+                            Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu
+                            felis.</blockquote>
+                        <h4>Preformatted</h4>
+                        <pre><code>i = 0;
 
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Lists</h3>
+                        <div class="row">
+                            <div class="col-6 col-12-medium">
+                                <h4>Unordered</h4>
+                                <ul>
+                                    <li>Dolor pulvinar etiam.</li>
+                                    <li>Sagittis adipiscing.</li>
+                                    <li>Felis enim feugiat.</li>
+                                </ul>
+                                <h4>Alternate</h4>
+                                <ul class="alt">
+                                    <li>Dolor pulvinar etiam.</li>
+                                    <li>Sagittis adipiscing.</li>
+                                    <li>Felis enim feugiat.</li>
+                                </ul>
                             </div>
-                            <div class="body_text">
-                                <span>Môn:</span>
-                                <p>Toán</p>
-
+                            <div class="col-6 col-12-medium">
+                                <h4>Ordered</h4>
+                                <ol>
+                                    <li>Dolor pulvinar etiam.</li>
+                                    <li>Etiam vel felis viverra.</li>
+                                    <li>Felis enim feugiat.</li>
+                                    <li>Dolor pulvinar etiam.</li>
+                                    <li>Etiam vel felis lorem.</li>
+                                    <li>Felis enim et feugiat.</li>
+                                </ol>
+                                <h4>Icons</h4>
+                                <ul class="icons">
+                                    <li><a href="#" class="icon brands fa-twitter"><span
+                                                class="label">Twitter</span></a></li>
+                                    <li><a href="#" class="icon brands fa-facebook-f"><span
+                                                class="label">Facebook</span></a></li>
+                                    <li><a href="#" class="icon brands fa-instagram"><span
+                                                class="label">Instagram</span></a></li>
+                                    <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a>
+                                    </li>
+                                </ul>
                             </div>
-
                         </div>
-                        <div class="body_second">
-
-                            <div class="body_text">
-                                <span>Số buổi/Tuần:</span>
-                                <p>3 buổi</p>
+                        <h3>Actions</h3>
+                        <div class="row">
+                            <div class="col-6 col-12-medium">
+                                <ul class="actions">
+                                    <li><a href="#" class="button">Default</a></li>
+                                    <li><a href="#" class="button">Default</a></li>
+                                    <li><a href="#" class="button">Default</a></li>
+                                </ul>
+                                <ul class="actions small">
+                                    <li><a href="#" class="button small">Small</a></li>
+                                    <li><a href="#" class="button small">Small</a></li>
+                                    <li><a href="#" class="button small">Small</a></li>
+                                </ul>
+                                <ul class="actions stacked">
+                                    <li><a href="#" class="button">Default</a></li>
+                                    <li><a href="#" class="button">Default</a></li>
+                                    <li><a href="#" class="button">Default</a></li>
+                                </ul>
+                                <ul class="actions stacked">
+                                    <li><a href="#" class="button small">Small</a></li>
+                                    <li><a href="#" class="button small">Small</a></li>
+                                    <li><a href="#" class="button small">Small</a></li>
+                                </ul>
                             </div>
-                            <div class="body_text">
-                                <span>Thời gian/Buổi:</span>
-                                <p>2 giờ</p>
+                            <div class="col-6 col-12-medium">
+                                <ul class="actions stacked">
+                                    <li><a href="#" class="button fit">Default</a></li>
+                                    <li><a href="#" class="button fit">Default</a></li>
+                                </ul>
+                                <ul class="actions stacked">
+                                    <li><a href="#" class="button small fit">Small</a></li>
+                                    <li><a href="#" class="button small fit">Small</a></li>
+                                </ul>
                             </div>
+                        </div>
+                    </section>
 
+                    <section>
+                        <h3>Table</h3>
+                        <h4>Default</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Item One</td>
+                                        <td>Ante turpis integer aliquet porttitor.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Two</td>
+                                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                        <td>19.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Three</td>
+                                        <td> Morbi faucibus arcu accumsan lorem.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Four</td>
+                                        <td>Vitae integer tempus condimentum.</td>
+                                        <td>19.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Five</td>
+                                        <td>Ante turpis integer aliquet porttitor.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td>100.00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
                         </div>
 
+                        <h4>Alternate</h4>
+                        <div class="table-wrapper">
+                            <table class="alt">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Item One</td>
+                                        <td>Ante turpis integer aliquet porttitor.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Two</td>
+                                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                        <td>19.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Three</td>
+                                        <td> Morbi faucibus arcu accumsan lorem.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Four</td>
+                                        <td>Vitae integer tempus condimentum.</td>
+                                        <td>19.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Item Five</td>
+                                        <td>Ante turpis integer aliquet porttitor.</td>
+                                        <td>29.99</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td>100.00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
 
+                    <section>
+                        <h3>Buttons</h3>
+                        <ul class="actions">
+                            <li><a href="#" class="button large">Large</a></li>
+                            <li><a href="#" class="button">Default</a></li>
+                            <li><a href="#" class="button small">Small</a></li>
+                        </ul>
+                        <ul class="actions fit">
+                            <li><a href="#" class="button fit">Fit</a></li>
+                            <li><a href="#" class="button fit">Fit</a></li>
+                            <li><a href="#" class="button fit">Fit</a></li>
+                        </ul>
+                        <ul class="actions fit small">
+                            <li><a href="#" class="button fit small">Fit + Small</a></li>
+                            <li><a href="#" class="button fit small">Fit + Small</a></li>
+                            <li><a href="#" class="button fit small">Fit + Small</a></li>
+                        </ul>
+                        <ul class="actions">
+                            <li><a href="#" class="button icon solid fa-download">Icon</a></li>
+                            <li><a href="#" class="button icon solid fa-upload">Icon</a></li>
+                            <li><a href="#" class="button icon solid fa-save">Icon</a></li>
+                        </ul>
+                        <ul class="actions">
+                            <li><span class="button disabled">Disabled</span></li>
+                            <li><span class="button disabled icon solid fa-download">Disabled</span></li>
+                        </ul>
+                    </section>
 
-                    </div>
+                    <section>
+                        <h3>Form</h3>
+                        <form method="post" action="#">
+                            <div class="row gtr-uniform">
+                                <div class="col-6 col-12-xsmall">
+                                    <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+                                </div>
+                                <div class="col-6 col-12-xsmall">
+                                    <input type="email" name="demo-email" id="demo-email" value=""
+                                        placeholder="Email" />
+                                </div>
+                                <div class="col-12">
+                                    <select name="demo-category" id="demo-category">
+                                        <option value="">- Category -</option>
+                                        <option value="1">Manufacturing</option>
+                                        <option value="1">Shipping</option>
+                                        <option value="1">Administration</option>
+                                        <option value="1">Human Resources</option>
+                                    </select>
+                                </div>
+                                <div class="col-4 col-12-small">
+                                    <input type="radio" id="demo-priority-low" name="demo-priority" checked>
+                                    <label for="demo-priority-low">Low</label>
+                                </div>
+                                <div class="col-4 col-12-small">
+                                    <input type="radio" id="demo-priority-normal" name="demo-priority">
+                                    <label for="demo-priority-normal">Normal</label>
+                                </div>
+                                <div class="col-4 col-12-small">
+                                    <input type="radio" id="demo-priority-high" name="demo-priority">
+                                    <label for="demo-priority-high">High</label>
+                                </div>
+                                <div class="col-6 col-12-small">
+                                    <input type="checkbox" id="demo-copy" name="demo-copy">
+                                    <label for="demo-copy">Email me a copy</label>
+                                </div>
+                                <div class="col-6 col-12-small">
+                                    <input type="checkbox" id="demo-human" name="demo-human" checked>
+                                    <label for="demo-human">Not a robot</label>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+                                        rows="6"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Send Message" /></li>
+                                        <li><input type="reset" value="Reset" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
 
-                    <footer>
+                    <section>
+                        <h3>Image</h3>
+                        <h4>Fit</h4>
+                        <div class="box alt">
+                            <div class="row gtr-uniform">
+                                <div class="col-12"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
+                                </div>
+                                <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+                                </div>
+                                <div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span>
+                                </div>
+                                <div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span>
+                                </div>
+                                <div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span>
+                                </div>
+                                <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+                                </div>
+                                <div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span>
+                                </div>
+                                <div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span>
+                                </div>
+                                <div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span>
+                                </div>
+                                <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Left &amp; Right</h4>
+                        <p><span class="image left"><img src="images/pic07.jpg" alt="" /></span>Fringilla nisl. Donec
+                            accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante
+                            ipsum primis in faucibus vestibulum. Blandit
+                            adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+                            pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+                            primis in faucibus vestibulum. Blandit adipiscing
+                            eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+                            praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod.
+                            Vestibulum ante ipsum primis in faucibus vestibulum.
+                            Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+                            pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+                            primis in faucibus vestibulum. Blandit adipiscing
+                            eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+                            praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
+                            Integer ac pellentesque praesent tincidunt felis
+                            sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit
+                            adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+                            pellentesque praesent.</p>
+                        <p><span class="image right"><img src="images/pic04.jpg" alt="" /></span>Fringilla nisl. Donec
+                            accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante
+                            ipsum primis in faucibus vestibulum. Blandit
+                            adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+                            pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+                            primis in faucibus vestibulum. Blandit adipiscing
+                            eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+                            praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod.
+                            Vestibulum ante ipsum primis in faucibus vestibulum.
+                            Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+                            pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+                            primis in faucibus vestibulum. Blandit adipiscing
+                            eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+                            praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
+                            Integer ac pellentesque praesent tincidunt felis
+                            sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit
+                            adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+                            pellentesque praesent.</p>
+                    </section>
 
-                        <a href="#" class="button btn">Hủy yêu cầu</a>
-
-
-                    </footer>
                 </article>
-                <article class="post">
-                    <header class="header_post">
-                        <div class="title">
-
-                            <h3>bạn đã đăng kí học <span>Toán</span> với gia sư <span>Nguyễn Tố Tâm</span></h3>
-                        </div>
-                        <div class="meta meta_ci">
-                            <div class="circle"></div>
-                            <p>Đang chờ xác nhận từ gia sư</p>
-                        </div>
-                    </header>
-
-                    <div class="body_tokyo">
-                        <div class="body_first">
-                            <div class="body_text">
-                                <span>Dạy Lớp:</span>
-                                <p>Lớp 10, 11, 12</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Môn:</span>
-                                <p>Toán</p>
-
-                            </div>
-
-                        </div>
-                        <div class="body_second">
-
-                            <div class="body_text">
-                                <span>Số buổi/Tuần:</span>
-                                <p>3 buổi</p>
-                            </div>
-                            <div class="body_text">
-                                <span>Thời gian/Buổi:</span>
-                                <p>2 giờ</p>
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-
-                    <footer>
-
-                        <a href="#" class="button btn">Hủy yêu cầu</a>
-
-
-                    </footer>
-                </article>
-
-
             </div>
 
             <div id="Tokyo" class="tabcontent">
-                <article class="post">
-                    <header class="header_post">
-                        <div class="title">
-
-                            <h3>Gia Sư <span>Võ Văn Hoàng</span> đăng kí dạy bạn</h3>
-                        </div>
-
-                    </header>
-                    <div class="body_img">
-                        <img src="images/pic08.jpg" class="image img_body" alt="">
-                        <h2>Võ Văn Hoàng</h2>
-                    </div>
-                    <div class="body_tokyo">
-
-
-                        <div class="body_first">
-                            <div class="body_text">
-                                <span>Dạy môn:</span>
-                                <p>Toán</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Trình độ:</span>
-                                <p>Đại học</p>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Học Phí:</span>
-                                <p>100.000 đ/Buổi</p>
-                            </div>
-                        </div>
-                        <div class="body_second">
-                            <div class="body_text">
-
-                                <span>Dạy Lớp:</span>
-                                <p>Lớp 10, 11, 12</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Địa chỉ:</span>
-                                <p>Đà Nắng</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <footer class="footer_jc">
-
-                        <a href="#" class="button btnjc">Từ chối </a>
-                        <a href="#" class="button btnjc">Chấp nhận</a>
-
-
-                    </footer>
-                </article>
-                <article class="post">
-                    <header class="header_post">
-                        <div class="title">
-
-                            <h3>Gia Sư <span>Võ Văn Hoàng</span> đăng kí dạy bạn</h3>
-                        </div>
-
-                    </header>
-                    <div class="body_img">
-                        <img src="images/pic08.jpg" class="image img_body" alt="">
-                        <h2>Võ Văn Hoàng</h2>
-                    </div>
-                    <div class="body_tokyo">
-
-
-                        <div class="body_first">
-                            <div class="body_text">
-                                <span>Dạy môn:</span>
-                                <p>Toán</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Trình độ:</span>
-                                <p>Đại học</p>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Học Phí:</span>
-                                <p>100.000 đ/Buổi</p>
-                            </div>
-                        </div>
-                        <div class="body_second">
-                            <div class="body_text">
-
-                                <span>Dạy Lớp:</span>
-                                <p>Lớp 10, 11, 12</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Địa chỉ:</span>
-                                <p>Đà Nắng</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <footer class="footer_jc">
-
-                        <a href="#" class="button btnjc">Từ chối </a>
-                        <a href="#" class="button btnjc">Chấp nhận</a>
-
-
-                    </footer>
-                </article>
+                <!-- Pagination -->
+                <ul class="actions pagination">
+                    <li><a href="" class="disabled button large previous">Previous Page</a></li>
+                    <li><a href="#" class="button large next">Next Page</a></li>
+                </ul>
             </div>
 
             <script>
@@ -339,6 +767,9 @@
                     evt.currentTarget.className += " active";
                 }
             </script>
+
+
+            
 
 
 
@@ -436,7 +867,9 @@
             <!-- About -->
             <section class="blurb">
                 <h2>About</h2>
-                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
+                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+                    amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.
+                </p>
                 <ul class="actions">
                     <li><a href="#" class="button">Learn More</a></li>
                 </ul>
@@ -464,6 +897,8 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/thu_js.js"></script>
+
 
 </body>
 
