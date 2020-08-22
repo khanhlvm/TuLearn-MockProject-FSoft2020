@@ -1,35 +1,16 @@
-.dn:hover {
-    color: white;
-    background-color: #00BFFF;
-    opacity: 1;
-}
-
-.qmk {
-    color: black;
-}
-
-.qmk:hover {
-    color: salmon;
-}
-
 .dn {
-    opacity: 0.7;
+    opacity: 0.6;
     background-color: #00BFFF;
     text-align: center;
-    height: 35px;
+    height: 2.3em;
     border-radius: 5px;
     color: white;
-    align-content: center;
 }
 
-#demo-name {
-    height: 40px;
-}
-
-#demo-email {
-    height: 40px;
-}
-
-#login-area {
+.dn:hover {
+    color: black;
+    background-color: #00BFFF;
     opacity: 1;
 }
+
+.dn p{font-size: 1.2em;}
