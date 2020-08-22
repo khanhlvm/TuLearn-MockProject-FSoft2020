@@ -6,6 +6,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/input-radio.css">
     <link rel="icon" href="images/icon-tab.png">
 </head>
 
@@ -137,7 +139,7 @@
         <section id="sidebar">
             <!-- Tabbar -->
             <div class="tab">
-                <button class="tablinks" ><i class="fas fa-user-graduate"></i></button>
+                <button class="tablinks"><i class="fas fa-user-graduate"></i></button>
                 <button class="tablinks" onclick="openCity(event, 'Login')">Đăng nhập</button>
                 <button class="tablinks" onclick="openCity(event, 'Register')">Đăng ký</button>
             </div>
@@ -146,50 +148,31 @@
                 <section id="login-area">
                     <form method="post" action="#">
                         <div class="row gtr-uniform">
-                            <div class="col-6 col-12-xsmall">
-                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+
+                            <div class="col-12">
+                                <label for="Email">Địa chỉ Email</label>
+                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Nhập địa chỉ email" />
                             </div>
-                            <div class="col-6 col-12-xsmall">
-                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+                            <div class="col-6">
+                                <label for="MK">Mật khẩu</label>
+                            </div>
+                            <div class="col-6">
+                                <div style="text-align: right;">
+                                    <a href="#">Quên mật khẩu?</a>
+                                </div>
                             </div>
                             <div class="col-12">
-                                <select name="demo-category" id="demo-category">
-                                    <option value="">- Category -</option>
-                                    <option value="1">Manufacturing</option>
-                                    <option value="1">Shipping</option>
-                                    <option value="1">Administration</option>
-                                    <option value="1">Human Resources</option>
-                                </select>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-low" name="demo-priority" checked>
-                                <label for="demo-priority-low">Low</label>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-normal" name="demo-priority">
-                                <label for="demo-priority-normal">Normal</label>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-high" name="demo-priority">
-                                <label for="demo-priority-high">High</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="demo-copy" name="demo-copy">
-                                <label for="demo-copy">Email me a copy</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="demo-human" name="demo-human" checked>
-                                <label for="demo-human">Not a robot</label>
+                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Nhập mật khẩu" />
                             </div>
                             <div class="col-12">
-                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" value="Đăng ký" /></li>
-                                    <li><input type="reset" value="Đăng nhập" /></li>
-                                </ul>
-                            </div>
+                                <hr>
+                                <a href="#">
+                                    <div class="dn">
+                                        <p id="dnp"><i class="fas fa-sign-in-alt"></i> Đăng nhập</p>
+                                    </div>
+                                </a>
+                            </div>         
+
                         </div>
                     </form>
                 </section>
@@ -200,93 +183,85 @@
                     <form method="post" action="#">
                         <div class="row gtr-uniform">
                             <div class="col-12">
-                                <select name="demo-category" id="demo-category">
-                                    <option value="">- Category -</option>
-                                    <option value="1">Manufacturing</option>
-                                    <option value="1">Shipping</option>
-                                    <option value="1">Administration</option>
-                                    <option value="1">Human Resources</option>
-                                </select>
+                                <label for="e">Bạn là ai?</label>
                             </div>
-                            <div class="col-12">
-                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-                            </div>
-                            <div class="col-6 col-12-xsmall">
-                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-                            </div>
-                            <div class="col-6 col-12-xsmall">
-                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-                            </div>
-                            <div class="col-4 col-12-small">
+                            <div class="col-6 col-12-small">
                                 <input type="radio" id="demo-priority-low" name="demo-priority" checked>
-                                <label for="demo-priority-low">Low</label>
+                                <label for="demo-priority-low">Học viên</label>
                             </div>
-                            <div class="col-4 col-12-small">
+                            <div class="col-6 col-12-small">
                                 <input type="radio" id="demo-priority-normal" name="demo-priority">
-                                <label for="demo-priority-normal">Normal</label>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-high" name="demo-priority">
-                                <label for="demo-priority-high">High</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="demo-copy" name="demo-copy">
-                                <label for="demo-copy">Email me a copy</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="demo-human" name="demo-human" checked>
-                                <label for="demo-human">Not a robot</label>
+                                <label for="demo-priority-normal">Gia sư</label>
                             </div>
                             <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" value="Đăng ký" /></li>
-                                    <li><input type="reset" value="Đăng nhập" /></li>
-                                </ul>
+                                <label for="Email">Địa chỉ Email</label>
+                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Nhập địa chỉ Email" />
                             </div>
+                            <div class="col-12">
+                                <label for="MK">Mật khẩu</label>
+                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Đặt mật khẩu" />
+                            </div>
+                            <div class="col-12">
+                                <label for="MK">Nhập lại mật khẩu</label>
+                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Nhập lại mật khẩu" />
+                            </div>
+                            <div class="col-12">
+                                <hr>
+                                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                                <label for="checkbox"><a href="#">Chấp nhận Điều khoản sử dụng và Chính sách bảo mật</a></label>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">
+                                    <div class="dn">
+                                        <p id="dnp"><i class="fas fa-sign-in-alt"></i> Đăng ký</p>
+                                    </div>
+                                </a>
+                            </div>
+
                         </div>
                     </form>
                 </section>
-            </div>            
-            <!-- NhanNTT13 - End Insert Code -->
+            </div>
+    <!-- NhanNTT13 - End Insert Code -->
 
-            <script>
-                function openCity(evt, cityName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(cityName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
-            </script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 
-            <!-- About -->
-            <section class="blurb">
-                <h2>About</h2>
-                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
-                <ul class="actions">
-                    <li><a href="#" class="button">Learn More</a></li>
-                </ul>
-            </section>
+    <!-- About -->
+    <section class="blurb">
+        <h2>About</h2>
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
+        <ul class="actions">
+            <li><a href="#" class="button">Learn More</a></li>
+        </ul>
+    </section>
 
-            <!-- Footer -->
-            <section id="footer">
-                <ul class="icons">
-                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-                <p class="copyright">&copy; TutorLearn Design Team</p>
-            </section>
+    <!-- Footer -->
+    <section id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <p class="copyright">&copy; TutorLearn Design Team</p>
+    </section>
 
-        </section>
+    </section>
 
     </div>
 
