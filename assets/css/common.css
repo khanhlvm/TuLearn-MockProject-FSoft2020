@@ -1,0 +1,28 @@
+.invalid {
+                
+    color: red;
+   
+}
+.form{
+    display: flex;
+}
+.input{
+    width: 150px;
+}
+.input-cmnd{
+    width: 120px;
+}
+.radio-btn{
+    margin-right: 30px;
+}
+.cer{
+    height: 80%;
+    border-radius: 15px;
+    background-color: #bfbfbf;
+}
+.text{
+    font-size: xx-large;
+}
+.btn-Xong{
+    width: 110px;   
+}
