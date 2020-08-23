@@ -16,12 +16,10 @@
     margin-right: 30px;
 }
 .cer{
-    height: 80%;
-    border-radius: 15px;
+    height: 4em;
+    text-align: center;
+    border-radius: 0.8em;
     background-color: #bfbfbf;
-}
-.text{
-    font-size: xx-large;
 }
 .btn-Xong{
     width: 110px;   
