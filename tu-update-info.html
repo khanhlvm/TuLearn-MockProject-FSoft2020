@@ -94,79 +94,63 @@
         <!-- Main -->
         <div id="main">
             <article class="post">
-                <h1 class="text">Cập nhật thông tin</h1>
+                <h1>Cập nhật thông tin</h1>
                 <form method="post" action="#">
                     <div class="row gtr-uniform">
                         <div class=" col-6"  >
                             <label for="">Họ và tên</label>
-                            <input type="text" id="formHovaTen">
+                            <input type="text" id="formHovaTen" placeholder="Nhập họ và tên">
                             <p id="invalidHovaTen"  class="invalid"></p>
                         </div>
-                        <div class=" col-6">
-                            <label for="">Địa chỉ Email</label>
-                            <input type="text" id="formEmail">
-                            <p id="invalidEmail"  class="invalid"></p>
-                        </div>
-                        <div class="col-6"  >
-                            <label for="" >Số điện thoại</label>
-                            <input type="text" id= "formSDT">
-                            <p id="invalidSDT"  class="invalid"></p>
-                        </div>
-                        <div class="col-6"  >
-                            <label for="" >CMND</label>
-                            <input type="text" id="formCMND">
-                            <p id="invalidCMND"  class="invalid"></p>
-                        </div>
-                        <div class="col-12"> <label for=""> Giới tính</label></div>
-                        <div class="col-4 col-12-small">
-                         
+
+                        <div class="col-6">
+                            <label for=""> Giới tính</label>
                             <input type="radio" id="demo-priority-low" name="demo-priority" checked>
                             <label for="demo-priority-low">Nam</label>
-                        </div>
-                        <div class="col-4 col-12-small">
+
                             <input type="radio" id="demo-priority-normal" name="demo-priority">
                             <label for="demo-priority-normal">Nữ</label>
-                        </div>
-                        <div class="col-4 col-12-small">
+
                             <input type="radio" id="demo-priority-high" name="demo-priority">
                             <label for="demo-priority-high">Khác</label>
                         </div>
+
+                        <div class=" col-6">
+                            <label for="">Địa chỉ Email</label>
+                            <input type="text" id="formEmail" placeholder="Nhập địa chỉ email">
+                            <p id="invalidEmail"  class="invalid"></p>
+                        </div>
+
+                        
+                        <div class="col-6"  >
+                            <label for="" >Số điện thoại</label>
+                            <input type="text" id= "formSDT" placeholder="Nhập số điện thoại">
+                            <p id="invalidSDT"  class="invalid"></p>
+                        </div>
+
+                        <div class="col-6"  >
+                            <label for="" >CMND</label>
+                            <input type="text" id="formCMND" placeholder="Nhập số CMND">
+                            <p id="invalidCMND"  class="invalid"></p>
+                        </div>
                         <div class=" col-6"  >
                             <label for="">Mức lương</label>
-                            <input type="text" id="formHovaTen">
+                            <input type="text" id="formHovaTen" placeholder="Nhập mức lương">
                             <p id="invalidHovaTen"  class="invalid"></p>
+                        </div>
+                        <div class=" col-12">
+                            <label for="">Nơi Làm việc</label>
+                            <input type="text" id="formEmail" placeholder="Nhập nơi làm việc">
+                            <p id="invalidEmail"  class="invalid"></p>
                         </div>
                         <div class=" col-6">
                             <label for="">Trình độ chuyên môn</label>
-                            <input type="text" id="formEmail">
+                            <input type="text" id="formEmail" placeholder="Nhập trình độ chuyên môn">
                             <p id="invalidEmail"  class="invalid"></p>
-                        </div>
-                        <div class=" col-6">
-                            <label for="">Nơi Làm việc</label>
-                            <input type="text" id="formEmail">
-                            <p id="invalidEmail"  class="invalid"></p>
-                        </div>
-                        <div class=" col-6">
-                            <label for="">Chứng chỉ</label>
-                            <form action="#">
-                                <div  style="display: flex;">
-                                    <input type="text" id="formEmail">
-                                    <input type="submit" value="XÓA" /></li>
-                                </div>
-                                <div  style="display: flex;">
-                                    <input type="text" id="formEmail">
-                                    <input type="submit" value="XÓA" /></li>
-                                </div>
-                                <div  style="display: flex;">
-                                    <input type="text" id="formEmail">
-                                    <input type="submit" value="XÓA" /></li>
-                                </div>
-                            </form>
-                            <p id="invalidEmail"  class="invalid"></p>
-                        </div>
+                        </div>                  
             
                         <div class="col-6" >
-                            <label for="" >Tỉnh/Thành phố</label>
+                            <label for="" >Tỉnh/TP</label>
                             <select name="cars" id="cars">
                                 <option value="">Đà Nẵng</option>
                                 <option value="">Hà Nội</option>
@@ -189,12 +173,13 @@
                                 <option value="o">...</option>
                               </select>
                         </div>
-                        <div class="col-6">
-                            <label for="" >Số nhà</label>
-                            <input type="text" id = "formSoNha">
+                        <div class="col-12">
+                            <label for="" >Số nhà, Đường</label>
+                            <input type="text" id = "formSoNha" placeholder="Nhập số nhà, đường">
                             <p id="invalidSoNha"  class="invalid"></p>
                         </div>
                         <div class="col-12">
+                            <hr>
                             <ul class="actions">
                                 <li><input type="reset" value="HỦY" /></li>
                                 <li><input type="submit" value="CẬP NHẬT" id="btn-CapNhat" /></li>
