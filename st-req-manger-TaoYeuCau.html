@@ -95,15 +95,15 @@
 
         <!-- Main -->
         <div id="main">
-     
-            <div id="ChinhSua" class="content">
+
+            <div id="DangBai" class="content">
                 <!-- Post -->
                 <section>
-                    <h2>Chỉnh Sửa Bài Đăng</h2>
-                    
+                    <h2>Đăng Bài Tìm Gia Sư</h2>
+
                     <form method="post" action="#">
                         <div class="row gtr-uniform">
-                            
+
                             <div class="col-6 col-12-xsmall">
                                 <label for="MonHoc">Môn Học</label>
                                 <select name="MonHoc" id="MonHoc">
@@ -143,27 +143,31 @@
 
                             <div class="col-6 col-12-xsmall">
                                 <label for="SoGioMotBuoi">Số Giờ/Buổi</label>
-                                <select name="SoGioMotBuoi" id="demo-category">
-                                    <option value="">1</option>
-                                    <option value="1">1.5</option>
-                                    <option value="1">2</option>
-                                    <option value="1">2.5</option>
+                                <select name="SoGioMotBuoi" id="SoGioMotBuoi">
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
                                 </select>
                             </div>
 
                             <div class="col-6 col-12-xsmall">
                                 <label for="SoBuoiMotTuan">Số Buổi/Tuần</label>
-                                <select name="SoBuoiMotTuan" id="demo-category">
-                                    <option value="">1</option>
-                                    <option value="1">2</option>
-                                    <option value="1">3</option>
-                                    <option value="1">4</option>
+                                <select name="SoBuoiMotTuan" id="SoBuoiMotTuan">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
                                 </select>
                             </div>
                             <div class="col-12">
                                 <label for="">Ngày Dự Kiến Bắt Đầu Học</label>
-                                <input type="date" name="Date" id="datepicker"/>
+                                <input type="date" name="Date" id="datepicker" />
                             </div>
+                            <p id="state5" class="error"></p>
 
                             <div class="col-12">
                                 <label for="">Yêu cầu, mong muốn khác của học viên</label>
@@ -183,7 +187,7 @@
                                         <option value="1">4</option>
                                     </select>
                                     <div class="row canh col-12 gioranh1" id="idGioRanh1-0">
-                                        <div class="row canh col-3 col-6-xsmall gio"> 
+                                        <div class="row canh col-3 col-6-xsmall gio">
                                             <select name="GioBatDau" id="demo-category">
                                                 <option value="">Giờ Bắt Đầu</option>
                                                 <option value="1">1.5</option>
@@ -200,10 +204,11 @@
                                                 <option value="1">2.5</option>
                                             </select>
                                         </div>
-                                        <a class="gio XoaGio" onclick="XoaGio(this)"><i class="fas fa-times-circle" ></i></a>
+                                        <a class="gio XoaGio" onclick="XoaGio(this)"><i
+                                                class="fas fa-times-circle"></i></a>
                                     </div>
                                     <div class="col-12" id="add_more1"> </div>
-                                    
+
 
                                     <input class="themgio" type="button" value="Thêm Giờ" onclick="ThemGio(this)">
 
@@ -215,7 +220,8 @@
                             </div>
                             <div class="col-12">
                                 <ul class="actions">
-                                    <li><input id="btnCapNhap" type="submit" value="Cập Nhập" /></li>
+                                    <li><input id="btnDangBai" type="submit" value="Đăng Bài" /></li>
+                                    <li><input type="reset" value="Reset" /></li>
                                 </ul>
                             </div>
                         </div>

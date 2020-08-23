@@ -22,6 +22,50 @@ function setInputDate(_id) {
 
 setInputDate("#datepicker");
 
+$(document).ready(function () {
+
+
+    $('#btnDangBai, #btnCapNhap').on('click', function (e) {
+        e.preventDefault();
+        var inputState1 = $('#MonHoc').val();
+        var inputState2 = $('#GioiTinhGiaSu').val();
+        var inputState3 = $('#TrinhDoGiaSu').val();
+        var inputState4 = $('#HocPhiDeXuat').val();
+        // var inputState5 = $('#datepicker').val();
+        var checkMoney = /^([1-9]+\d*)$/g;
+        if (inputState1 == "" || inputState2 == "" || inputState3 == "" || inputState4 == "" || !checkMoney.test(inputState4)) {
+            $("html, body").animate({ scrollTop: 0 }, 600);
+        }
+
+        if (inputState1 == "") {
+            $('#state1').text("Không chọn item đầu tiên");
+            $("#state1").show().delay(3000).fadeOut(1000);
+        }
+        if (inputState2 == "") {
+            $('#state2').text("Không chọn item đầu tiên");
+            $("#state2").show().delay(3000).fadeOut(1000);
+        }
+        if (inputState3 == "") {
+            $('#state3').text("Không chọn item đầu tiên");
+            $("#state3").show().delay(3000).fadeOut(1000);
+        }
+        if (inputState4 == "" || !checkMoney.test(inputState4)) {
+            $('#state4').text("Làm ơn nhập số nguyên dương");
+            $("#state4").show().delay(3000).fadeOut(1000);
+        }
+        // if (inputState5 == "") {
+        //     $('#state5').text("Không chọn item đầu tiên");
+        //     $("#state5").show().delay(3000).fadeOut(1000);
+        // }
+
+
+
+    })
+   
+})
+
+
+
 var serie1 = $('.gioranh1').clone();
 var serie2 = $(".gioranh2").clone();
 // var serie3 = $(".gioranh3").clone();
@@ -57,7 +101,7 @@ function ThemGio(obj) {
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh1', 'added');
             newgio.innerHTML = document.getElementById('idGioRanh1-0').innerHTML;
             document.getElementById('add_more1').appendChild(newgio);
-            
+
             // var selectElements = document.querySelectorAll('.gioranh1');
             // for (var i = 1; i < selectElements.length; i++) {
             //     selectElements[i].id = 'idGioRanh1-' + i;
@@ -69,48 +113,48 @@ function ThemGio(obj) {
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh2', 'added');
             newgio.innerHTML = document.getElementById('idGioRanh2-0').innerHTML;
             document.getElementById('add_more1').appendChild(newgio);
-            
-          
+
+
             break;
         case 3:
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh3', 'added');
             newgio.innerHTML = document.getElementById('idGioRanh3-0').innerHTML;
             document.getElementById('add_more1').appendChild(newgio);
-            
-         
+
+
             break;
         case 4:
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh4', 'added');
             newgio.innerHTML = document.getElementById('idGioRanh4-0').innerHTML;
             document.getElementById('add_more1').appendChild(newgio);
-            
-           
+
+
             break;
         case 5:
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh5', 'added');
             newgio.innerHTML = document.getElementById('idGioRanh5-0').innerHTML;
             document.getElementById('add_more1').appendChild(newgio);
-            
-           
+
+
             break;
         case 6:
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh6', 'added');
             newgio.innerHTML = document.getElementById('idGioRanh6-0').innerHTML;
             document.getElementById('add_more1').appendChild(newgio);
-            
-            
+
+
             break;
         case 7:
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh7', 'added');
             newgio.innerHTML = document.getElementById('idGioRanh7-0').innerHTML;
             document.getElementById('add_more1').appendChild(newgio);
-            
-            
+
+
             break;
 
         default:
