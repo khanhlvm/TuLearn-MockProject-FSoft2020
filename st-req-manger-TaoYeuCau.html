@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Trang quản lý yêu cầu của HV - TuLearn</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/thu_css.css">
+    <link rel="stylesheet" href="assets/css/input-radio.css">
+    <link rel="icon" href="images/icon-tab.png">
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html"><i class="fas fa-user-graduate"></i> TuLearn</a></h1>
+            <nav class="links">
+                <ul>
+                    <li><a href="#"><i class="fas fa-users"></i> Quản lý lớp học</a></li>
+                    <li><a href="#"><i class="fas fa-tasks"></i> Quản lý yêu cầu</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i> Tìm gia sư</a></li>
+                    <li><a href="#"><i class="far fa-calendar-plus"></i> Tạo yêu
+                            cầu</a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i> Thông báo</a></li>
+                </ul>
+            </nav>
+            <nav class="main">
+                <ul>
+                    <li class="search">
+                        <a class="fa-search" href="#search">Search</a>
+                        <form id="search" method="get" action="#">
+                            <input type="text" name="query" placeholder="Search" />
+                        </form>
+                    </li>
+                    <li class="menu">
+                        <a class="fa-bars" href="#menu">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <section id="menu">
+
+            <!-- Search -->
+            <section>
+                <form class="search" method="get" action="#">
+                    <input type="text" name="query" placeholder="Search" />
+                </form>
+            </section>
+
+            <!-- Links -->
+            <section>
+                <ul class="links">
+                    <li>
+                        <a href="#">
+                            <h3><i class="fas fa-users"></i> Quản lý lớp học</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3><i class="fas fa-tasks"></i> Quản lý yêu cầu</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3><i class="fas fa-search"></i> Tìm gia sư</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3><i class="far fa-calendar-plus"></i> Tạo yêu cầu</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3><i class="fas fa-bell"></i> Thông báo</h3>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Actions -->
+            <section>
+                <h1><a href="index.html"><i class="fas fa-user-graduate"></i> TuLearn</a></h1>
+            </section>
+
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="post">
+                <!-- Post -->
+                <section>
+                    <h2>Tạo yêu cầu tìm gia sư</h2>
+
+                    <form method="post" action="#">
+                        <div class="row gtr-uniform">
+
+                            <div class="col-6 col-12-xsmall">
+                                <label for="MonHoc">Môn Học</label>
+                                <select name="MonHoc" id="MonHoc">
+                                    <option value="">- Môn Học -</option>
+                                    <option value="1">Hóa</option>
+                                    <option value="1">Toán</option>
+                                    <option value="1">Ngữ Văn</option>
+                                </select>
+                                <p id="state1" class="error"></p>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="GioiTinhGiaSu">Giới Tính Gia Sư</label>
+                                <select name="GioiTinhGiaSu" id="GioiTinhGiaSu">
+                                    <option value="">- Giới Tính Gia Sư -</option>
+                                    <option value="1">Nam</option>
+                                    <option value="2">Nữ</option>
+                                    <option value="3">Cả Hai</option>
+                                </select>
+                                <p id="state2" class="error"></p>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="TrinhDoGiaSu">Trình Độ Gia Sư</label>
+                                <select name="TrinhDoGiaSu" id="TrinhDoGiaSu">
+                                    <option value="">- Trình Độ Gia Sư -</option>
+                                    <option value="1">Sinh Viên</option>
+                                    <option value="2">Giáo Viên</option>
+                                    <option value="3">Toàn Bộ</option>
+                                </select>
+                                <p id="state3" class="error"></p>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Học Phí Đề Xuất</label>
+                                <input type="text" name="HocPhiDeXuat" id="HocPhiDeXuat" value=""
+                                    placeholder="0 vnđ/buổi" />
+                                <p id="state4" class="error"></p>
+                            </div>
+
+                            <div class="col-6 col-12-xsmall">
+                                <label for="SoGioMotBuoi">Số Giờ/Buổi</label>
+                                <select name="SoGioMotBuoi" id="SoGioMotBuoi">
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-12-xsmall">
+                                <label for="SoBuoiMotTuan">Số Buổi/Tuần</label>
+                                <select name="SoBuoiMotTuan" id="SoBuoiMotTuan">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="">Ngày Dự Kiến Bắt Đầu Học</label>
+                                <input type="date" name="Date" id="datepicker" />
+                            </div>
+                            <p id="state5" class="error"></p>
+
+                            <div class="col-12">
+                                <label for="">Yêu cầu, mong muốn khác của học viên</label>
+                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+                                    rows="6"></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="">Ngày Rảnh Trong Tuần</label>
+                            </div>
+                            <div class="col-12">
+                                <div class="row canh ngay" id="ngay1">
+                                    <select class="col-6" name="NgayRanh1" id="NgayRanh1">
+                                        <option value="">T2</option>
+                                        <option value="1">T3</option>
+                                        <option value="1">3</option>
+                                        <option value="1">4</option>
+                                    </select>
+                                    <div class="row canh col-12 gioranh1" id="idGioRanh1-0">
+                                        <div class="row canh col-3 col-6-xsmall gio">
+                                            <select name="GioBatDau" id="demo-category">
+                                                <option value="">Giờ Bắt Đầu</option>
+                                                <option value="1">1.5</option>
+                                                <option value="1">2</option>
+                                                <option value="1">2.5</option>
+                                            </select>
+                                        </div>
+                                        <label class="phancachgio" for="">-</label>
+                                        <div class="row canh col-3 col-6-xsmall gio">
+                                            <select name="GioBatDau" id="demo-category">
+                                                <option value="">Giờ Kết Thúc</option>
+                                                <option value="1">1.5</option>
+                                                <option value="1">2</option>
+                                                <option value="1">2.5</option>
+                                            </select>
+                                        </div>
+                                        <a class="gio XoaGio" onclick="XoaGio(this)"><i
+                                                class="fas fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="col-12" id="add_more1"> </div>
+
+
+                                    <input class="themgio" type="button" value="Thêm Giờ" onclick="ThemGio(this)">
+
+                                </div>
+                                <div class="col-12" id="add_more_ngay"></div>
+                                <input class="themngay" id="themngay" type="button" value="Thêm Ngày" onclick="">
+                                <input class="xoangay" id="xoangay" type="button" value="Xóa Ngày" onclick="">
+
+                            </div>
+                            <div class="col-12">
+                                <ul class="actions">
+                                    <li><input id="btnDangBai" type="submit" value="Đăng Bài" /></li>
+                                    <li><input type="reset" value="Reset" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </article>
+        </div>
+
+        <!-- Sidebar -->
+        <section id="sidebar">
+
+            <!-- Intro -->
+            <section id="intro">
+                <a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
+                <header>
+                    <h2>Tên học viên</h2>
+                    <p><i class="fas fa-user-check"></i> Trạng thái người dùng</a>
+                    </p>
+                </header>
+            </section>
+            <section id="menu-bar">
+                <ul class="alt">
+                    <li>
+                        <i class="far fa-address-card"></i>
+                        <a href="">Xem trang cá nhân của bạn</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-unlock-alt"></i>
+                        <a href="">Thay đổi mật khẩu</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-edit"></i>
+                        <a href="">Cập nhật thông tin</a>
+                    </li>
+                    <li>
+                        <i class="far fa-bell"></i>
+                        <a href="">Quản lý thông báo</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-sign-out-alt"></i>
+                        <a href="">Đăng xuất</a>
+                    </li>
+                </ul>
+                <h2>Gia sư gần bạn <i class="fas fa-hand-point-down"></i></h2>
+            </section>
+
+            <!-- Posts List -->
+            <section>
+                <ul class="posts">
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="single.html">Tên Gia sư</a></h3>
+                                <p class="published">Hải Châu, Đà Nẵng - Rate 4.5 <i class="fas fa-star"></i></p>
+                            </header>
+                            <a href="single.html" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="single.html">Tên Gia sư</a></h3>
+                                <p class="published">Hải Châu, Đà Nẵng - Rate 4.5 <i class="fas fa-star"></i></p>
+                            </header>
+                            <a href="single.html" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="single.html">Tên Gia sư</a></h3>
+                                <p class="published">Thanh Khê, Đà Nẵng - Rate 3.5 <i class="fas fa-star"></i></p>
+                            </header>
+                            <a href="single.html" class="image"><img src="images/pic10.jpg" alt="" /></a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="single.html">Tên Gia sư</a></h3>
+                                <p class="published">Liên Chiểu, Đà Nẵng - Rate 5 <i class="fas fa-star"></i></p>
+                            </header>
+                            <a href="single.html" class="image"><img src="images/pic11.jpg" alt="" /></a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="single.html">Tên Gia sư</a></h3>
+                                <p class="published">Sơn Trà, Đà Nẵng - Rate 4.8 <i class="fas fa-star"></i></p>
+                            </header>
+                            <a href="single.html" class="image"><img src="images/pic12.jpg" alt="" /></a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- About -->
+            <section class="blurb">
+                <h2>About</h2>
+                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+                    amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.
+                </p>
+                <ul class="actions">
+                    <li><a href="#" class="button">Learn More</a></li>
+                </ul>
+            </section>
+
+            <!-- Footer -->
+            <section id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <p class="copyright">&copy; TutorLearn Design Team</p>
+            </section>
+
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/thu_js.js"></script>
+
+
+</body>
+
+</html>
