@@ -1,4 +1,4 @@
-h1 {
+#Hanoi h1 {
     /* float: left; */
     display: block;
     color: black;
@@ -112,7 +112,7 @@ ul.breadcrumb li a:hover {
     margin-left: 15px;
 }
 
-h2 {
+#Hanoi h2 {
     margin-top: 80px;
     margin-left: 80px;
     color: rgb(45, 11, 105);
