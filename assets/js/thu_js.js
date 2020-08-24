@@ -65,96 +65,54 @@ $(document).ready(function () {
 })
 
 
-
-var serie1 = $('.gioranh1').clone();
-var serie2 = $(".gioranh2").clone();
-// var serie3 = $(".gioranh3").clone();
-// var serie4 = $(".gioranh4").clone();
-// var serie5 = $(".gioranh5").clone();
-// var serie6 = $(".gioranh6").clone();
-// var serie7 = $(".gioranh7").clone();
-
-function addInput(divName, template) {
-    if (counter == 5) {
-        document.getElementById("add_more_text").remove();
-    } else {
-        var newdiv = document.createElement('div');
-        newdiv.className = 'added';
-        newdiv.innerHTML = document.getElementById(divName).innerHTML;
-        document.getElementById(template).appendChild(newdiv);
-        counter++;
-    }
-
-    var selectElements = document.querySelectorAll('select');
-    for (var i = 0; i < selectElements.length; i++) {
-        selectElements[i].id = 'id-' + i;
-        selectElements[i].name = 'category' + i;
-    }
-}
-
-
 function ThemGio(obj) {
     var idNgay = obj.parentNode.id;
     switch (idNgay) {
         case 'ngay1':
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh1', 'added');
-            newgio.innerHTML = document.getElementById('idGioRanh1-0').innerHTML;
+            newgio.innerHTML = document.getElementById('idGioRanh').innerHTML;
             document.getElementById('add_more1').appendChild(newgio);
-
             // var selectElements = document.querySelectorAll('.gioranh1');
             // for (var i = 1; i < selectElements.length; i++) {
             //     selectElements[i].id = 'idGioRanh1-' + i;
             // }
             break;
         case 'ngay2':
-
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh2', 'added');
-            newgio.innerHTML = document.getElementById('idGioRanh2-0').innerHTML;
-            document.getElementById('add_more1').appendChild(newgio);
-
-
+            newgio.innerHTML = document.getElementById('idGioRanh').innerHTML;
+            document.getElementById('add_more2').appendChild(newgio);
             break;
-        case 3:
+        case 'ngay3':
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh3', 'added');
-            newgio.innerHTML = document.getElementById('idGioRanh3-0').innerHTML;
-            document.getElementById('add_more1').appendChild(newgio);
-
-
+            newgio.innerHTML = document.getElementById('idGioRanh').innerHTML;
+            document.getElementById('add_more3').appendChild(newgio);
             break;
-        case 4:
+        case 'ngay4':
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh4', 'added');
-            newgio.innerHTML = document.getElementById('idGioRanh4-0').innerHTML;
-            document.getElementById('add_more1').appendChild(newgio);
-
-
-            break;
-        case 5:
+            newgio.innerHTML = document.getElementById('idGioRanh').innerHTML;
+            document.getElementById('add_more4').appendChild(newgio);
+            break;;
+        case 'ngay5':
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh5', 'added');
-            newgio.innerHTML = document.getElementById('idGioRanh5-0').innerHTML;
-            document.getElementById('add_more1').appendChild(newgio);
-
-
+            newgio.innerHTML = document.getElementById('idGioRanh').innerHTML;
+            document.getElementById('add_more5').appendChild(newgio);
             break;
-        case 6:
+        case 'ngay6':
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh6', 'added');
-            newgio.innerHTML = document.getElementById('idGioRanh6-0').innerHTML;
-            document.getElementById('add_more1').appendChild(newgio);
-
-
+            newgio.innerHTML = document.getElementById('idGioRanh').innerHTML;
+            document.getElementById('add_more6').appendChild(newgio);
             break;
-        case 7:
+        case 'ngay7':
             var newgio = document.createElement('div');
             newgio.classList.add('row', 'canh', 'col-12', 'gioranh7', 'added');
-            newgio.innerHTML = document.getElementById('idGioRanh7-0').innerHTML;
-            document.getElementById('add_more1').appendChild(newgio);
-
-
+            newgio.innerHTML = document.getElementById('idGioRanh').innerHTML;
+            document.getElementById('add_more7').appendChild(newgio);
             break;
 
         default:
