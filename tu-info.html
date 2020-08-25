@@ -1,13 +1,15 @@
+
 <!DOCTYPE HTML>
 <html>
 
 <head>
-    <title>Trang quản lớp học của GS - TuLearn</title>
+    <title>Trang thông tin cá nhân của GS - TuLearn</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/input-radio.css">
     <link rel="icon" href="images/icon-tab.png">
-    <link rel="stylesheet" href="assets/css/req-manger.css">
 </head>
 
 <body class="is-preload">
@@ -90,203 +92,81 @@
 
             <!-- Tabbar -->
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')">Lớp đang chờ duyệt</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Lớp đang dạy</button>
-                <button class="tablinks" onclick="openCity(event, 'XH')">Lớp đã dạy</button>
+                <button class="tablinks" onclick="openCity(event, 'London')">Thông tin cá nhân</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Chứng chỉ</button>
             </div>
-
             <div id="London" class="tabcontent">
-                <!-- Post -->
                 <article class="post">
-                    <header class="header_post">
-                        <div class="title">
-                            <h1>Thông tin lớp học</h1>
+                    <form method="post" action="#">
+                        <div class="row gtr-uniform">
+                            <div class=" col-6 form" >
+                                <label for="" class="input">Họ và tên: </label>
+                                <p>Trần Thị Minh Trang</p>
+                            </div>
+                            <div class="col-6 form">
+                                <label for="" class="input">Giới tính: </label>
+                                <p>Nữ</p>
+                            </div>
+                            <div class="col-6 form" >
+                                <label for="" class="input">Số điện thoại: </label>
+                                <p>0796250638</p>
+                            </div>
+                            <div class="col-6 form" >
+                                <label for="" class="input-cmnd">CMND: </label>
+                                <p>201766667</p>
+                            </div>
+                            
+                            <div class=" col-12 form">
+                                <label for="" class="input">Địa chỉ Email: </label>
+                                <p>trangttmde130021@fpt.edu.vn</p>
+                            </div>
+                            <div class=" col-6 form" >
+                                <label for="" class="input">Mức lương: </label>
+                                <p>: 4.000.000</p>
+                            </div>
+                            <div class=" col-6 form">
+                                <label for="" class="input">Trình độ: </label>
+                                <p>Đại học</p>
+                            </div>
+                            <div class="col-6 form" >
+                                <label for="" class="input">Tỉnh/TP: </label>
+                                <p>Đà Nẵng</p>
+                            </div>
+                            <div class="col-6 form">
+                                <label for="" class="input">Quận/Huyện: </label>
+                                <p>Hòa Vang</p>
+                            </div>
+                            <div class="col-6 form" >
+                                <label for="" class="input">Phường/Xã: </label>
+                                <p>Hòa Phước</p>
+                            </div>
+                            <div class="col-6 form" >
+                                <label for="" class="input">Số nhà, Đường: </label>
+                                <p>QL1A</p>
+                            </div>
+                            <div class="col-12">
+                                <hr>
+                                <ul class="actions">
+                                    <li><input type="reset" value="HỦY" /></li>
+                                    <li><input type="submit" value="CẬP NHẬT" /></li>
+                                </ul>
+                            </div>
+                    
                         </div>
-                    </header>
-
-                    <div class="row">
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin học viên</h3>
-                            <div class="body_text">
-                                <span>Họ và Tên:</span>
-                                <p>Võ Thị Thục Trang</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Địa chỉ:</span>
-                                <p>123 Nguyễn Văn Linh,Đà Nẵng</p>
-
-                            </div>
-                            <div class="body_text">
-                                <span>SĐT:</span>
-                                <p>038299274</p>
-                            </div>
-
-                        </div>
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin yêu cầu</h3>
-                            <div class="body_text">
-
-                                <span>Lớp học:</span>
-                                <p>lớp 10</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Môn học:</span>
-                                <p>Toán</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Số buổi/Tuần:</span>
-                                <p>2 buổi</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Thời gian/Buổi</span>
-                                <p>2 giờ</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Lịch học:</span>
-                                <p>Thứ 2, thứ 4</p><br>
-                            </div>
-                            <div class="body_text_tu">
-
-                                <span>Yêu cầu của học viên:</span>
-                                <p>Muốn gia sự dạy kĩ về phần hình học vì bị mất gốc</p><br>
-                            </div>
-
-                        </div>
-                        <div class="col-12 col-12-status">
-                            <p>Trạng Thái yêu cầu: </p><span class="col-12-status_span"> Chưa xác nhận</span>
-                        </div>
-                    </div>
-                    <footer>
-                     <a href="#" class="button btn">Cập nhật</a>
-                    </footer>
+                    </form>
                 </article>
-                
             </div>
-
             <div id="Paris" class="tabcontent">
-                <!-- Post -->
                 <article class="post">
-                    <div class="row">
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin lớp học</h3>
-                            <div class="body_text">
-
-                                <span>Lớp học:</span>
-                                <p>lớp 11</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Môn học:</span>
-                                <p>Toán</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Số buổi/Tuần:</span>
-                                <p>2 buổi</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Thời gian/Buổi</span>
-                                <p>2 giờ</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Lịch học:</span>
-                                <p>Thứ 2, thứ 4</p><br>
-                            </div>
-
-                        </div>
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin học viên</h3>
-                            <div class="body_text">
-                                <span>Họ và Tên:</span>
-                                <p>Nguyễn Thị Hòa</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Địa chỉ:</span>
-                                <p>Quảng Ngãi</p>
-
-                            </div>
-                            <div class="body_text">
-                                <span>SĐT:</span>
-                                <p>038299274</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-12 col-12-status">
-                        <p>Trạng thái thanh toán: </p><span class="col-12-status_span"> Chưa thanh toán</span>
-                    </div>
-                    <footer>
-                        <a href="#" class="button btn">Kết thúc lớp học</a>
-                    </footer>
-                </article>
-
+                    <ul>
+                        <li>Chứng chỉ 1: <a href="">url</a></li>
+                        <li>Chứng chỉ 2: <a href="">url</a></li>
+                        <li>Chứng chỉ 3: <a href="">url</a></li>
+                    </ul>
+                    <hr>
+                    <a class="button large">Thêm chứng chỉ</a></li>
+                </article>         
             </div>
-
-            <div id="XH" class="tabcontent">
-                <!-- Post -->
-                <article class="post">
-                    <div class="row">
-
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin lớp học</h3>
-                            <div class="body_text">
-
-                                <span>Lớp học:</span>
-                                <p>lớp 10</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Môn học:</span>
-                                <p>Toán</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Số buổi/Tuần:</span>
-                                <p>2 buổi</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Thời gian/Buổi</span>
-                                <p>2 giờ</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Lịch học:</span>
-                                <p>Thứ 2, thứ 4</p><br>
-                            </div>
-                        </div>
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin học viên</h3>
-                            <div class="body_text">
-                                <span>Họ và Tên:</span>
-                                <p>Nguyễn Thị Thu Thảo</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Địa chỉ:</span>
-                                <p>123 Nguyễn Văn Linh,Đà Nẵng</p>
-
-                            </div>
-                            <div class="body_text">
-                                <span>SĐT:</span>
-                                <p>038299274</p>
-                            </div>
-                        </div>
-                    </div>
-                    <footer>
-                        <a href="#" class="button btn">Xóa lớp học</a>
-                    </footer>
-                </article>
-            </div>
-
             <script>
                 function openCity(evt, cityName) {
                     var i, tabcontent, tablinks;
@@ -302,8 +182,8 @@
                     evt.currentTarget.className += " active";
                 }
             </script>
+            
         </div>
-
         <!-- Sidebar -->
         <section id="sidebar">
 

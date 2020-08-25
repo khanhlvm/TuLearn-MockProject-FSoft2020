@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/admin.css" />
     <link rel="icon" href="images/icon-tab.png">
 </head>
 
@@ -97,236 +98,557 @@
 
         <!-- Main -->
         <div id="main">
-
+            
             <!-- Tabbar -->
             <div class="tab">
                 <button class="tablinks" onclick="openCity(event, 'London')">Q.Lý Gia sư</button>
                 <button class="tablinks" onclick="openCity(event, 'Paris')">Q.Lý Học viên</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Q.Lý Yêu cầu</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Q.Lý Bài viết</button>
                 <button class="tablinks" onclick="openCity(event, 'Seoul')">Q.Lý Kết nối</button>
                 <button class="tablinks" onclick="openCity(event, 'Hanoi')">Q.Lý Môn học</button>
+                <button class="tablinks" onclick="openCity(event, 'Berlin')">Q.Lý Tài khoản Admin</button>
             </div>
+            <article class="post">
             <!-- VietPX - Insert Code Below -->
             <div id="London" class="tabcontent">
-                <h3>Table</h3>
-                <h4>Default</h4>
-                <div class="table-wrapper">
+                <!-- Tutor -->
+
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <div class="row chi">
+                            <input type="text" placeholder="Tìm kiếm gia sư..." name="search">
+                            
+                        </div>
+
+                    </form>
+                </div>
+                <div class="table-wrapper chi3">
                     <table>
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Description</th>
-                                <th>Price</th>
+                                <th>ID</th>
+                                <th>Tên gia sư</th>
+                                <th>Trạng thái</th>
+                                <th>Điểm đánh giá</th>
+                                <th>Tổng yêu cầu nhận</th>
+                                <th>Kết nối thành công</th>
+                                <th>Kết nối thất bại</th>
                             </tr>
+
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Item One</td>
-                                <td>Ante turpis integer aliquet porttitor.</td>
-                                <td>29.99</td>
+                                <td>1</td>
+                                <td>Franklin D. Roosevelt</td>
+                                <td>On</td>
+                                <td>8.3</td>
+                                <td>8</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>
+                                    <ul class="actions">
+                                        <div class="bt1"> <button type="submit" class="button small">Chặn</button></div>
+                                        <li><a href="#" class="button small">Chi tiết</a></li>
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+                                    </ul>
+
+                                </td>
                             </tr>
                             <tr>
-                                <td>Item Two</td>
-                                <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                                <td>19.99</td>
-                            </tr>
-                            <tr>
-                                <td>Item Three</td>
-                                <td> Morbi faucibus arcu accumsan lorem.</td>
-                                <td>29.99</td>
-                            </tr>
-                            <tr>
-                                <td>Item Four</td>
-                                <td>Vitae integer tempus condimentum.</td>
-                                <td>19.99</td>
-                            </tr>
-                            <tr>
-                                <td>Item Five</td>
-                                <td>Ante turpis integer aliquet porttitor.</td>
-                                <td>29.99</td>
+                                <td>2</td>
+                                <td>John F. Kennedy</td>
+                                <td>On</td>
+                                <td>7.5</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>4</td>
+                            
+                                <td>
+                                        <ul class="actions">
+                                            <div class="bt1"> <button type="submit" class="button small">Chặn</button></div>
+                                            <li><a href="#" class="button small">Chi tiết</a></li>
+                                            <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+                                        </ul>
+                                </td>
                             </tr>
                         </tbody>
                         <tfoot>
-                            <tr>
-                                <td colspan="2"></td>
-                                <td>100.00</td>
-                            </tr>
+
                         </tfoot>
                     </table>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Trang trước</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">Trang sau</a></li>
+
+
+                    </ul>
+
+
                 </div>
             </div>
 
             <div id="Paris" class="tabcontent">
-                <h4>Alternate</h4>
-                <div class="table-wrapper">
-                    <table class="alt">
+                <!-- Học viên -->
+
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <div class="row chi">
+                            <input type="text" placeholder="Tìm kiếm học viên..." name="search">
+                            
+                        </div>
+
+                    </form>
+                </div>
+                <div class="table-wrapper chi3">
+                    <table>
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Description</th>
-                                <th>Price</th>
+                                <th>ID</th>
+                                <th>Tên</th>
+                                <th>Số bài đăng</th>
+                                <th>Kết nối thành công</th>
+                                <th>Kết nối thất bại</th>
+                                <th>Chi tiết</td>
                             </tr>
+
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Item One</td>
-                                <td>Ante turpis integer aliquet porttitor.</td>
-                                <td>29.99</td>
+                                <td>HV661</td>
+                                <td>Vladimir Putin</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td> <input type="reset" value="Chi tiết" /></td>
+                                <td>
+                                    <ul class="actions">
+                                        <div class="bt1"> <button type="submit" class="button small">Chặn</button></div>
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
                             </tr>
                             <tr>
-                                <td>Item Two</td>
-                                <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                                <td>19.99</td>
+                                <td>HV244</td>
+                                <td>Dmitry Medvedev</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td> <input type="reset" value="Chi tiết" /></td>
+                                <td>
+                                    <ul class="actions">
+                                        <div class="bt1"> <button type="submit" class="button small">Chặn</button></div>
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
                             </tr>
                             <tr>
-                                <td>Item Three</td>
-                                <td> Morbi faucibus arcu accumsan lorem.</td>
-                                <td>29.99</td>
+                                <td>HV245</td>
+                                <td>Boris Yeltsin</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td> <input type="reset" value="Chi tiết" /></td>
+                                <td>
+                                    <ul class="actions">
+                                        <div class="bt1"> <button type="submit" class="button small">Chặn</button></div>
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
                             </tr>
                             <tr>
-                                <td>Item Four</td>
-                                <td>Vitae integer tempus condimentum.</td>
-                                <td>19.99</td>
+                                <td>HV235</td>
+                                <td> Lee H. Oswald</td>
+
+                                <td>4</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td> <input type="reset" value="Chi tiết" /></td>
+                                <td>
+                                    <ul class="actions">
+                                        <div class="bt1"> <button type="submit" class="button small">Chặn</button></div>
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
                             </tr>
                             <tr>
-                                <td>Item Five</td>
-                                <td>Ante turpis integer aliquet porttitor.</td>
-                                <td>29.99</td>
+                                <td>HV348</td>
+                                <td>Fidel Castro</td>
+
+                                <td>7</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td> <input type="reset" value="Chi tiết" /></td>
+                                <td>
+                                    <ul class="actions">
+                                        <div class="bt1"> <button type="submit" class="button small">Chặn</button></div>
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
                             </tr>
                         </tbody>
                         <tfoot>
-                            <tr>
-                                <td colspan="2"></td>
-                                <td>100.00</td>
-                            </tr>
+
                         </tfoot>
                     </table>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Trang trước</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">Trang sau</a></li>
+
+
+                    </ul>
                 </div>
-                </section>
-
-
-                </article>
             </div>
 
             <div id="Tokyo" class="tabcontent">
-                <section>
-                    <h3>Buttons</h3>
-                    <ul class="actions">
-                        <li><a href="#" class="button large">Large</a></li>
-                        <li><a href="#" class="button">Default</a></li>
-                        <li><a href="#" class="button small">Small</a></li>
+                <!-- Post -->
+
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <div class="row chi">
+                            <input type="text" placeholder="Tìm kiếm bài viết..." name="search">
+                            
+                        </div>
+
+                    </form>
+                </div>
+                <div class="table-wrapper chi3">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tiêu đề bài đăng</th>
+                                <th>Số lượng report</th>
+                                <th>Trạng thái bài đăng</th>
+                                <th>Thông tin người đăng</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BV261</td>
+                                <td>Tìm kiếm gia sư khu vực...</td>
+                                <td>0</td>
+                                <td>Đã kiểm duyệt</td>
+
+                                <td>
+                                    <input type="reset" value="Chi tiết" />
+                                </td>
+                                <td>
+                                    <ul class="actions">
+                                        <div class="bt1"> <button type="submit" class="button small">Ẩn bài
+                                                đăng</button></div>
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BV545</td>
+                                <td>Mở lớp Toán tại ...</td>
+                                <td>0</td>
+                                <td>Đã kiểm duyệt</td>
+                                <td>
+                                    <input type="reset" value="Chi tiết" />
+                                </td>
+                                <td>
+                                    <ul class="actions">
+                                        <div class="bt1"> <button type="submit" class="button small">Ẳn bài
+                                                đăng</button></div>
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BV659</td>
+                                <td>Tìm gia sư tại nhà ...</td>
+                                <td>2</td>
+                                <td>Đã kiểm duyệt</td>
+
+                                <td>
+                                    <input type="reset" value="Chi tiết" />
+                                </td>
+                                <td>
+                                    <ul class="actions">
+                                        <div class="bt1"> <button type="submit" class="button small">Ẩn bài
+                                                đăng</button></div>
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BV446</td>
+                                <td> Nhận kèm Văn 10...</td>
+
+                                <td>1</td>
+                                <td>Đã kiểm duyệt</td>
+
+                                <td>
+                                    <input type="reset" value="Chi tiết" />
+                                </td>
+                                <td>
+                                    <ul class="actions">
+                                        <div class="bt1"> <button type="submit" class="button small">Ẩn bài
+                                                đăng</button></div>
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BV1598</td>
+                                <td>Tìm gia sư kèm ...</td>
+                                <td>0</td>
+                                <td>Đã kiểm duyệt</td>
+
+
+                                <td>
+                                    <input type="reset" value="Chi tiết" />
+                                </td>
+                                <td>
+                                    <ul class="actions">
+                                        <div class="bt1"> <button type="submit" class="button small">Ẩn bài
+                                                đăng</button></div>
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+
+                        </tfoot>
+                    </table>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Trang trước</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">Trang sau</a></li>
+
+
                     </ul>
-                    <ul class="actions fit">
-                        <li><a href="#" class="button fit">Fit</a></li>
-                        <li><a href="#" class="button fit">Fit</a></li>
-                        <li><a href="#" class="button fit">Fit</a></li>
-                    </ul>
-                    <ul class="actions fit small">
-                        <li><a href="#" class="button fit small">Fit + Small</a></li>
-                        <li><a href="#" class="button fit small">Fit + Small</a></li>
-                        <li><a href="#" class="button fit small">Fit + Small</a></li>
-                    </ul>
-                    <ul class="actions">
-                        <li><a href="#" class="button icon solid fa-download">Icon</a></li>
-                        <li><a href="#" class="button icon solid fa-upload">Icon</a></li>
-                        <li><a href="#" class="button icon solid fa-save">Icon</a></li>
-                    </ul>
-                    <ul class="actions">
-                        <li><span class="button disabled">Disabled</span></li>
-                        <li><span class="button disabled icon solid fa-download">Disabled</span></li>
-                    </ul>
-                </section>
+                </div>
             </div>
 
             <div id="Seoul" class="tabcontent">
-                <!-- Post -->
-                <section>
-                    <h3>Form</h3>
-                    <form method="post" action="#">
-                        <div class="row gtr-uniform">
-                            <div class="col-6 col-12-xsmall">
-                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-                            </div>
-                            <div class="col-6 col-12-xsmall">
-                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-                            </div>
-                            <div class="col-12">
-                                <select name="demo-category" id="demo-category">
-													<option value="">- Category -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-low" name="demo-priority" checked>
-                                <label for="demo-priority-low">Low</label>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-normal" name="demo-priority">
-                                <label for="demo-priority-normal">Normal</label>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-high" name="demo-priority">
-                                <label for="demo-priority-high">High</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="demo-copy" name="demo-copy">
-                                <label for="demo-copy">Email me a copy</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="demo-human" name="demo-human" checked>
-                                <label for="demo-human">Not a robot</label>
-                            </div>
-                            <div class="col-12">
-                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                    <li><input type="reset" value="Reset" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-                </section>
+                <!-- Connect -->
+
+
+                <div class="Select-container">
+                    <div class="row chiSelect">
+                        <select name="demo-category" id="demo-category">
+                            <option value="">-Đã Thanh Toán-</option>
+                            <option value="1">-Chưa Thanh Toán-</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="table-wrapper chi3">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID Gia sư</th>
+                                <th>Tên gia sư</th>
+                                <th>ID Học viên</th>
+                                <th>Tên học viên</th>
+                                <th>Trạng thái kết nối</th>
+
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>GS188</td>
+                                <td>Franklin D. Roosevelt</td>
+                                <td>HV661</td>
+                                <td>Vladimir Putin</td>
+                                <td>Đang kết nối</td>
+
+
+                                <td>
+                                    <ul class="actions">
+
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS323</td>
+                                <td>Grafiel Columbus</td>
+                                <td>HV244</td>
+                                <td>Dmitry Medvedev</td>
+                                <td>Đang kết nối</td>
+
+                                <td>
+                                    <ul class="actions">
+
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS612</td>
+                                <td>George Washington</td>
+                                <td>HV245</td>
+                                <td>Boris Yeltsin</td>
+                                <td>Đang kết nối</td>
+
+                                <td>
+                                    <ul class="actions">
+
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS123</td>
+                                <td>John F. Kennedy</td>
+                                <td>HV235</td>
+                                <td> Lee H. Oswald</td>
+                                <td>Đang kết nối</td>
+
+                                <td>
+                                    <ul class="actions">
+
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GS151</td>
+                                <td>Abraham Lincoln</td>
+                                <td>HV348</td>
+                                <td>Fidel Castro</td>
+                                <td>Đang kết nối</td>
+
+                                <td>
+                                    <ul class="actions">
+
+                                        <li><a href="#" class="button small">Cập nhật trạng thái</a></li>
+
+                                    </ul>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+
+                        </tfoot>
+                    </table>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Trang trước</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">Trang sau</a></li>
+
+
+                    </ul>
+                </div>
+
             </div>
 
             <div id="Hanoi" class="tabcontent">
-                <section>
-                    <h3>Image</h3>
-                    <h4>Fit</h4>
-                    <div class="box alt">
-                        <div class="row gtr-uniform">
-                            <div class="col-12"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+                <!-- Add Subject -->     
+                    
+                    <div class="row gtr-uniform">
+                        <div class="col-6">
+                            <h3>Thêm Môn Học </h3>
+                            <hr>
+                            <form action="">
+                                <label for="add-subject">Tên môn học: </label>
+                                <input type="text" name="add-subject" id="add-subject" value="" placeholder="Nhập tên môn học" />
+                                <ul class="actionss">
+                                    <ul class="actions">
+                                        <li><input type="reset" value="Hủy" /></li>
+                                        <li><input type="submit" value="Thêm môn học" /></li>
+                                    </ul>
+                                </ul>
+                            </form>                           
+                        </div>
+                        
+                        <div class="col-6">
+                                <form action="/action_page.php">
+                                    <h3>Danh sách môn học đã có</h3>
+                                    <hr>
+                                    <input type="text" placeholder="Lọc danh sách môn học đã có" name="search">
+                                    
+                                    <div class="list">
+                                        <ul>
+                                            <li>Toán</li>
+                                            <li>Văn</li>
+                                            <li>Tin học</li>
+                                            <li>Anh văn</li>
+                                            <li>Lịch sử</li>
+                                            <li>Địa lý</li>
+                                            <li>GDCD</li>
+                                            <li>Vật lý</li>
+                                            <li>Hóa học</li>
+                                        </ul>
+                                    </div>
+                                </form>                   
                         </div>
                     </div>
-                    <h4>Left &amp; Right</h4>
-                    <p><span class="image left"><img src="images/pic07.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing
-                        eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing
-                        eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus
-                        euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-                    <p><span class="image right"><img src="images/pic04.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing
-                        eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing
-                        eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus
-                        euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+            </div>
+            <div id="Berlin" class="tabcontent">
+                <section id="menu-bar">
+                    <ul class="alt">
+                        <li>
+                            <i class="far fa-address-card"></i>
+                            <a href="">Xem trang cá nhân của bạn</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-unlock-alt"></i>
+                            <a href="">Thay đổi mật khẩu</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-edit"></i>
+                            <a href="">Cập nhật thông tin</a>
+                        </li>
+                        <li>
+                            <i class="far fa-bell"></i>
+                            <a href="">Quản lý thông báo</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-sign-out-alt"></i>
+                            <a href="">Đăng xuất</a>
+                        </li>
+                    </ul>
+    
                 </section>
             </div>
-
+        </article>
             <script>
                 function openCity(evt, cityName) {
                     var i, tabcontent, tablinks;
@@ -344,67 +666,8 @@
             </script>
 
         </div>
+    
         <!-- VietPX - End Insert Code -->
-        
-        <!-- Sidebar -->
-        <section id="sidebar">
-
-            <!-- Intro -->
-            <section id="intro">
-                <a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
-                <header>
-                    <h2>Tên Admin</h2>
-                    <p><i class="fas fa-user-check"></i> Trạng thái admin</a>
-                    </p>
-                </header>
-            </section>
-            <section id="menu-bar">
-                <ul class="alt">
-                    <li>
-                        <i class="far fa-address-card"></i>
-                        <a href="">Xem hồ sơ của bạn</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-unlock-alt"></i>
-                        <a href="">Thay đổi mật khẩu</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-edit"></i>
-                        <a href="">Cập nhật hồ sơ</a>
-                    </li>
-                    <li>
-                        <i class="far fa-bell"></i>
-                        <a href="">Quản lý thông báo</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-sign-out-alt"></i>
-                        <a href="">Đăng xuất</a>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- About -->
-            <section class="blurb">
-                <h2>About</h2>
-                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
-                <ul class="actions">
-                    <li><a href="#" class="button">Learn More</a></li>
-                </ul>
-            </section>
-
-            <!-- Footer -->
-            <section id="footer">
-                <ul class="icons">
-                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-                <p class="copyright">&copy; TutorLearn Design Team</p>
-            </section>
-
-        </section>
 
     </div>
 

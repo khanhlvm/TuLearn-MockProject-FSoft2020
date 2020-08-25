@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/thu_css.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/input-radio.css">
-    <link rel="stylesheet" href="assets/css/req-manger.css">
     <link rel="icon" href="images/icon-tab.png">
 </head>
 
@@ -26,7 +24,7 @@
                     <li><a href="#"><i class="fas fa-users"></i> Quản lý lớp học</a></li>
                     <li><a href="#"><i class="fas fa-tasks"></i> Quản lý yêu cầu</a></li>
                     <li><a href="#"><i class="fas fa-search"></i> Tìm gia sư</a></li>
-                    <li><a href="#" onclick="openCity(event, 'DangBai')"><i class="far fa-calendar-plus"></i> Tạo yêu
+                    <li><a href="#"><i class="far fa-calendar-plus"></i> Tạo yêu
                             cầu</a></li>
                     <li><a href="#"><i class="fas fa-bell"></i> Thông báo</a></li>
                 </ul>
@@ -97,190 +95,161 @@
 
         <!-- Main -->
         <div id="main">
-
-            <!-- Tabbar -->
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')">Yêu cầu tìm GS</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Gửi lời mời dạy</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">GS gửi yêu cầu</button>
-            </div>
-            
-            <div id="London" class="tabcontent">
+            <article class="post">
                 <!-- Post -->
-                <article class="post">
-                    <header>
-                        <div class="title">
-                            <h2><a href="single.html">ID-xxxxxxxx</a></h2>
-                            <p class="status">Status: ---</p>
-                            <a class="quanly" onclick="" href="#">Chỉnh Sửa</a>
-                            <a class="quanly" onclick="" href="#">Hủy yêu cầu</a>
-                        </div>
-                        <div class="meta">
-                            <time class="published" datetime="2015-11-01">November 1, 2015</time>
-                            <a href="#" class="author"><span class="name"> - Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
-                        </div>
-                    </header>
-                    <div class="row bai">
-                        <div class="row col-6 col-12-xsmall">
-                            <label class="infor" for="">Môn Học: </label>
-                            <label class="infor" for="">Toán</label>
-                        </div>
-                        <div class="row col-6 col-12-xsmall">
-                            <label class="infor" for="">Giới Tính Gia Sư: </label>
-                            <label class="infor" for="">Cả Hai</label>
-                        </div>
-                        <div class="row col-6 col-12-xsmall">
-                            <label class="infor" for="">Trình Độ Gia Sư: </label>
-                            <label class="infor" for="">Sinh Viên</label>
-                        </div>
-                        <div class="row col-6 col-12-xsmall">
-                            <label class="infor" for="">Học Phí Đề Xuất/Buổi: </label>
-                            <label class="infor" for="">200.000 vnđ</label>
-                        </div>
-                        <div class="row col-6 col-12-xsmall">
-                            <label class="infor" for="">Số Giờ Học/Buổi: </label>
-                            <label class="infor" for="">1.5</label>
-                        </div>
-                        <div class="row col-6 col-12-xsmall">
-                            <label class="infor" for="">Số Buổi Học/Ngày: </label>
-                            <label class="infor" for="">3</label>
-                        </div>
-                        <div class="row col-12 more1">
-                            <label class="infor" for="">Ngày Dự Kiến Bắt Đầu Học: </label>
-                            <label class="infor" for="">22/09/2020</label>
-                        </div>
-                        <div class="row col-12 more1">
-                            <label class="infor" for="">Mong Muốn, Yêu Cầu Khác Của Học Viên: </label>
-                            <label class="infor" for="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
-                                quisquam quis, doloribus voluptatum libero consequuntur facilis quaerat laborum
-                                excepturi debitis, molestias, totam quia culpa laudantium dolorum suscipit maiores eum
-                                quasi!</label>
-                        </div>
-                        <div class="row col-6 more1">
-                            <label class="infor" for="">Thời Gian Rảnh Trong Tuần: </label>
-                            <label class="infor" for="">Thứ 2: 15:00-17:00</label>
-                        </div>
-                    </div>
-                    <footer>
-                        <ul class="actions">
-                            <li><a class="button large" onclick="HienThi(1)">Xem Thêm Thông Tin</a></li>
-                        </ul>
-                        <ul class="stats">
-                            <li><a href="#">General</a></li>
-                            <li><a href="#" class="icon solid fa-heart">28</a></li>
-                            <li><a href="#" class="icon solid fa-comment">128</a></li>
-                        </ul>
-                    </footer>
-                </article>
-            </div>
+                <section>
+                    <h2>Chỉnh Sửa Yêu Cầu Tìm Gia Sư</h2>
+                    <form method="post" action="#">
+                        <div class="row gtr-uniform">
 
-            <div id="Paris" class="tabcontent">
-                <!-- Post -->
-                <article class="post">
-                    <header class="header_post">
-                        <div class="title">
-                            <h3>bạn đã đăng kí học <span>Toán</span> với gia sư <span>Nguyễn Tố Tâm</span></h3>
-                        </div>
-                        <div class="meta meta_ci">
-                            <div class="circle"></div>
-                            <p>Đang chờ xác nhận từ gia sư</p>
-                        </div>
-                    </header>
-                    <div class="body_tokyo">
-                        <div class="body_first">
-                            <div class="body_text">
-                                <span>Dạy Lớp:</span>
-                                <p>Lớp 10, 11, 12</p><br>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="MonHoc">Môn Học</label>
+                                <select name="MonHoc" id="MonHoc">
+                                    <option value="">- Môn Học -</option>
+                                    <option value="1">Hóa</option>
+                                    <option value="1">Toán</option>
+                                    <option value="1">Ngữ Văn</option>
+                                </select>
+                                <p id="state1" class="error"></p>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="GioiTinhGiaSu">Giới Tính Gia Sư</label>
+                                <select name="GioiTinhGiaSu" id="GioiTinhGiaSu">
+                                    <option value="">- Giới Tính Gia Sư -</option>
+                                    <option value="1">Nam</option>
+                                    <option value="2">Nữ</option>
+                                    <option value="3">Cả Hai</option>
+                                </select>
+                                <p id="state2" class="error"></p>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="TrinhDoGiaSu">Trình Độ Gia Sư</label>
+                                <select name="TrinhDoGiaSu" id="TrinhDoGiaSu">
+                                    <option value="">- Trình Độ Gia Sư -</option>
+                                    <option value="1">Sinh Viên</option>
+                                    <option value="2">Giáo Viên</option>
+                                    <option value="3">Toàn Bộ</option>
+                                </select>
+                                <p id="state3" class="error"></p>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <label for="">Học Phí Đề Xuất</label>
+                                <input type="text" name="HocPhiDeXuat" id="HocPhiDeXuat" value=""
+                                    placeholder="0 vnđ/buổi" />
+                                <p id="state4" class="error"></p>
+                            </div>
+
+                            <div class="col-6 col-12-xsmall">
+                                <label for="SoGioMotBuoi">Số Giờ/Buổi</label>
+                                <select name="SoGioMotBuoi" id="demo-category">
+                                    <option value="">1</option>
+                                    <option value="1">1.5</option>
+                                    <option value="1">2</option>
+                                    <option value="1">2.5</option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 col-12-xsmall">
+                                <label for="SoBuoiMotTuan">Số Buổi/Tuần</label>
+                                <select name="SoBuoiMotTuan" id="demo-category">
+                                    <option value="">1</option>
+                                    <option value="1">2</option>
+                                    <option value="1">3</option>
+                                    <option value="1">4</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="">Ngày Dự Kiến Bắt Đầu Học</label>
+                                <input type="date" name="Date" id="datepicker" />
+                            </div>
+
+                            <div class="col-12">
+                                <label for="">Yêu cầu, mong muốn khác của học viên</label>
+                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+                                    rows="6"></textarea>
+                            </div>
+                            <!-- Ngày Rảnh -->
+                            <div class="col-12">
+                                <label for="">Ngày Rảnh Trong Tuần</label>
+                            </div>
+                            <div class="col-12">
+                                <div class="row canh ngay" id="ngay1">
+                                    <label for="">Thứ Hai</label>
+                                    <div class="row canh col-12 gioranh1 original" id="idGioRanh">
+                                        <div class="row canh col-3 col-6-xsmall gio">
+                                            <select name="GioBatDau" id="demo-category">
+                                                <option value="">Giờ Bắt Đầu</option>
+                                                <option value="1">1.5</option>
+                                                <option value="1">2</option>
+                                                <option value="1">2.5</option>
+                                            </select>
+                                        </div>
+                                        <label class="phancachgio" for="">-</label>
+                                        <div class="row canh col-3 col-6-xsmall gio">
+                                            <select name="GioBatDau" id="demo-category">
+                                                <option value="">Giờ Kết Thúc</option>
+                                                <option value="1">1.5</option>
+                                                <option value="1">2</option>
+                                                <option value="1">2.5</option>
+                                            </select>
+                                        </div>
+                                        <a class="gio XoaGio" onclick="XoaGio(this)"><i
+                                                class="fas fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="col-12" id="add_more1"> </div>
+                                    <input class="themgio" type="button" value="Thêm Giờ" onclick="ThemGio(this)">
+
+                                </div>
+                                <div class="row canh ngay" id="ngay2">
+                                    <label for="">Thứ Ba</label>
+                                    <div class="col-12" id="add_more2"> </div>
+                                    <input class="themgio" type="button" value="Thêm Giờ" onclick="ThemGio(this)">
+
+                                </div>
+                                <div class="row canh ngay" id="ngay3">
+                                    <label for="">Thứ Tư</label>
+                                    <div class="col-12" id="add_more3"> </div>
+                                    <input class="themgio" type="button" value="Thêm Giờ" onclick="ThemGio(this)">
+
+                                </div>
+                                <div class="row canh ngay" id="ngay4">
+                                    <label for="">Thứ Năm</label>
+                                    <div class="col-12" id="add_more4"> </div>
+                                    <input class="themgio" type="button" value="Thêm Giờ" onclick="ThemGio(this)">
+
+                                </div>
+                                <div class="row canh ngay" id="ngay5">
+                                    <label for="">Thứ Sáu</label>
+                                    <div class="col-12" id="add_more5"> </div>
+                                    <input class="themgio" type="button" value="Thêm Giờ" onclick="ThemGio(this)">
+
+                                </div>
+                                <div class="row canh ngay" id="ngay6">
+                                    <label for="">Thứ Bảy</label>
+                                    <div class="col-12" id="add_more6"> </div>
+                                    <input class="themgio" type="button" value="Thêm Giờ" onclick="ThemGio(this)">
+                                </div>
+                                <div class="row canh ngay" id="ngay7">
+                                    <label for="">Chủ Nhật</label>
+                                    <div class="col-12" id="add_more7"> </div>
+                                    <input class="themgio" type="button" value="Thêm Giờ" onclick="ThemGio(this)">
+
+                                </div>
+                            </div>
+                            <div class="col-12 ">
+                                <hr>
+                                <ul class="btnArea" >                                   
+                                    <li><input id="btnCapNhap" type="submit" value="Cập Nhập" /></li>
+                                </ul>
+                                
 
                             </div>
-                            <div class="body_text">
-                                <span>Môn:</span>
-                                <p>Toán</p>
-                            </div>
                         </div>
-                        <div class="body_second">
-                            <div class="body_text">
-                                <span>Số buổi/Tuần:</span>
-                                <p>3 buổi</p>
-                            </div>
-                            <div class="body_text">
-                                <span>Thời gian/Buổi:</span>
-                                <p>2 giờ</p>
-                            </div>
-                        </div>
-                    </div>
-                    <footer>
-                        <a href="#" class="button btn">Hủy yêu cầu</a>
-                    </footer>
-                </article>
-            </div>
+                    </form>
+                </section>
+            </article>
+        </div>
 
-            <div id="Tokyo" class="tabcontent">
-                <article class="post">
-                    <header class="header_post">
-                        <div class="title">
-
-                            <h3>Gia Sư <span>Võ Văn Hoàng</span> đăng kí dạy bạn</h3>
-                        </div>
-
-                    </header>
-                    <div class="body_img">
-                        <img src="images/pic08.jpg" class="image img_body" alt="">
-                        <h2>Võ Văn Hoàng</h2>
-                    </div>
-                    <div class="body_tokyo">
-                        <div class="body_first">
-                            <div class="body_text">
-                                <span>Dạy môn:</span>
-                                <p>Toán</p><br>
-                            </div>
-                            <div class="body_text">
-                                <span>Trình độ:</span>
-                                <p>Đại học</p>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Học Phí:</span>
-                                <p>100.000 đ/Buổi</p>
-                            </div>
-                        </div>
-                        <div class="body_second">
-                            <div class="body_text">
-
-                                <span>Dạy Lớp:</span>
-                                <p>Lớp 10, 11, 12</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Địa chỉ:</span>
-                                <p>Đà Nắng</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <footer class="footer_jc">
-                        <a href="#" class="button btnjc">Từ chối </a>
-                        <a href="#" class="button btnjc">Chấp nhận</a>
-                    </footer>
-                </article>
-            </div>
-            <script>
-                function openCity(evt, cityName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(cityName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
-            </script>
-        </div> 
-<!-- End Main -->
         <!-- Sidebar -->
         <section id="sidebar">
 

@@ -1,13 +1,19 @@
+
 <!DOCTYPE HTML>
 <html>
 
 <head>
-    <title>Trang quản lớp học của GS - TuLearn</title>
+    <title>Trang cập nhật thông tin cá nhân của GS - TuLearn</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/input-radio.css" />
+    <link rel="stylesheet" href="assets/css/common.css">
     <link rel="icon" href="images/icon-tab.png">
-    <link rel="stylesheet" href="assets/css/req-manger.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/validation.js"></script>
 </head>
 
 <body class="is-preload">
@@ -87,223 +93,103 @@
 
         <!-- Main -->
         <div id="main">
-
-            <!-- Tabbar -->
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')">Lớp đang chờ duyệt</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Lớp đang dạy</button>
-                <button class="tablinks" onclick="openCity(event, 'XH')">Lớp đã dạy</button>
-            </div>
-
-            <div id="London" class="tabcontent">
-                <!-- Post -->
-                <article class="post">
-                    <header class="header_post">
-                        <div class="title">
-                            <h1>Thông tin lớp học</h1>
+            <article class="post">
+                <h1>Cập nhật thông tin</h1>
+                <form method="post" action="#">
+                    <div class="row gtr-uniform">
+                        <div class=" col-6"  >
+                            <label for="">Họ và tên</label>
+                            <input type="text" id="formHovaTen" placeholder="Nhập họ và tên">
+                            <p id="invalidHovaTen"  class="invalid"></p>
                         </div>
-                    </header>
 
-                    <div class="row">
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin học viên</h3>
-                            <div class="body_text">
-                                <span>Họ và Tên:</span>
-                                <p>Võ Thị Thục Trang</p><br>
+                        <div class="col-6">
+                            <label for=""> Giới tính</label>
+                            <input type="radio" id="demo-priority-low" name="demo-priority" checked>
+                            <label for="demo-priority-low">Nam</label>
 
-                            </div>
-                            <div class="body_text">
-                                <span>Địa chỉ:</span>
-                                <p>123 Nguyễn Văn Linh,Đà Nẵng</p>
+                            <input type="radio" id="demo-priority-normal" name="demo-priority">
+                            <label for="demo-priority-normal">Nữ</label>
 
-                            </div>
-                            <div class="body_text">
-                                <span>SĐT:</span>
-                                <p>038299274</p>
-                            </div>
-
+                            <input type="radio" id="demo-priority-high" name="demo-priority">
+                            <label for="demo-priority-high">Khác</label>
                         </div>
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin yêu cầu</h3>
-                            <div class="body_text">
 
-                                <span>Lớp học:</span>
-                                <p>lớp 10</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Môn học:</span>
-                                <p>Toán</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Số buổi/Tuần:</span>
-                                <p>2 buổi</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Thời gian/Buổi</span>
-                                <p>2 giờ</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Lịch học:</span>
-                                <p>Thứ 2, thứ 4</p><br>
-                            </div>
-                            <div class="body_text_tu">
-
-                                <span>Yêu cầu của học viên:</span>
-                                <p>Muốn gia sự dạy kĩ về phần hình học vì bị mất gốc</p><br>
-                            </div>
-
+                        <div class=" col-6">
+                            <label for="">Địa chỉ Email</label>
+                            <input type="text" id="formEmail" placeholder="Nhập địa chỉ email">
+                            <p id="invalidEmail"  class="invalid"></p>
                         </div>
-                        <div class="col-12 col-12-status">
-                            <p>Trạng Thái yêu cầu: </p><span class="col-12-status_span"> Chưa xác nhận</span>
+
+                        
+                        <div class="col-6"  >
+                            <label for="" >Số điện thoại</label>
+                            <input type="text" id= "formSDT" placeholder="Nhập số điện thoại">
+                            <p id="invalidSDT"  class="invalid"></p>
                         </div>
+
+                        <div class="col-6"  >
+                            <label for="" >CMND</label>
+                            <input type="text" id="formCMND" placeholder="Nhập số CMND">
+                            <p id="invalidCMND"  class="invalid"></p>
+                        </div>
+                        <div class=" col-6"  >
+                            <label for="">Mức lương</label>
+                            <input type="text" id="formHovaTen" placeholder="Nhập mức lương">
+                            <p id="invalidHovaTen"  class="invalid"></p>
+                        </div>
+                        <div class=" col-12">
+                            <label for="">Nơi Làm việc</label>
+                            <input type="text" id="formEmail" placeholder="Nhập nơi làm việc">
+                            <p id="invalidEmail"  class="invalid"></p>
+                        </div>
+                        <div class=" col-6">
+                            <label for="">Trình độ chuyên môn</label>
+                            <input type="text" id="formEmail" placeholder="Nhập trình độ chuyên môn">
+                            <p id="invalidEmail"  class="invalid"></p>
+                        </div>                  
+            
+                        <div class="col-6" >
+                            <label for="" >Tỉnh/TP</label>
+                            <select name="cars" id="cars">
+                                <option value="">Đà Nẵng</option>
+                                <option value="">Hà Nội</option>
+                                <option value="o">Hồ Chí Minh</option>
+                              </select>
+                        </div>
+                        <div class="col-6" >
+                            <label for="" >Quận/Huyện</label>
+                            <select name="cars" id="cars">
+                                <option value="">Hải Châu</option>
+                                <option value="">Hòa Vang</option>
+                                <option value="">Sơn Trà</option>
+                              </select>
+                        </div>
+                        <div class="col-6" >
+                            <label for="" >Phường/Xã</label>
+                            <select name="cars" id="cars">
+                                <option value="">...</option>
+                                <option value="">...</option>
+                                <option value="o">...</option>
+                              </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="" >Số nhà, Đường</label>
+                            <input type="text" id = "formSoNha" placeholder="Nhập số nhà, đường">
+                            <p id="invalidSoNha"  class="invalid"></p>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                            <ul class="actions">
+                                <li><input type="reset" value="HỦY" /></li>
+                                <li><input type="submit" value="CẬP NHẬT" id="btn-CapNhat" /></li>
+                            </ul>
+                        </div>
+                  
                     </div>
-                    <footer>
-                     <a href="#" class="button btn">Cập nhật</a>
-                    </footer>
-                </article>
-                
-            </div>
-
-            <div id="Paris" class="tabcontent">
-                <!-- Post -->
-                <article class="post">
-                    <div class="row">
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin lớp học</h3>
-                            <div class="body_text">
-
-                                <span>Lớp học:</span>
-                                <p>lớp 11</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Môn học:</span>
-                                <p>Toán</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Số buổi/Tuần:</span>
-                                <p>2 buổi</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Thời gian/Buổi</span>
-                                <p>2 giờ</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Lịch học:</span>
-                                <p>Thứ 2, thứ 4</p><br>
-                            </div>
-
-                        </div>
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin học viên</h3>
-                            <div class="body_text">
-                                <span>Họ và Tên:</span>
-                                <p>Nguyễn Thị Hòa</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Địa chỉ:</span>
-                                <p>Quảng Ngãi</p>
-
-                            </div>
-                            <div class="body_text">
-                                <span>SĐT:</span>
-                                <p>038299274</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-12 col-12-status">
-                        <p>Trạng thái thanh toán: </p><span class="col-12-status_span"> Chưa thanh toán</span>
-                    </div>
-                    <footer>
-                        <a href="#" class="button btn">Kết thúc lớp học</a>
-                    </footer>
-                </article>
-
-            </div>
-
-            <div id="XH" class="tabcontent">
-                <!-- Post -->
-                <article class="post">
-                    <div class="row">
-
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin lớp học</h3>
-                            <div class="body_text">
-
-                                <span>Lớp học:</span>
-                                <p>lớp 10</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Môn học:</span>
-                                <p>Toán</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Số buổi/Tuần:</span>
-                                <p>2 buổi</p><br>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Thời gian/Buổi</span>
-                                <p>2 giờ</p>
-                            </div>
-                            <div class="body_text">
-
-                                <span>Lịch học:</span>
-                                <p>Thứ 2, thứ 4</p><br>
-                            </div>
-                        </div>
-                        <div class="col-6 col-12-medium">
-                            <h3>Thông tin học viên</h3>
-                            <div class="body_text">
-                                <span>Họ và Tên:</span>
-                                <p>Nguyễn Thị Thu Thảo</p><br>
-
-                            </div>
-                            <div class="body_text">
-                                <span>Địa chỉ:</span>
-                                <p>123 Nguyễn Văn Linh,Đà Nẵng</p>
-
-                            </div>
-                            <div class="body_text">
-                                <span>SĐT:</span>
-                                <p>038299274</p>
-                            </div>
-                        </div>
-                    </div>
-                    <footer>
-                        <a href="#" class="button btn">Xóa lớp học</a>
-                    </footer>
-                </article>
-            </div>
-
-            <script>
-                function openCity(evt, cityName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(cityName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
-            </script>
+                </form>
+            </article>
         </div>
-
         <!-- Sidebar -->
         <section id="sidebar">
 
